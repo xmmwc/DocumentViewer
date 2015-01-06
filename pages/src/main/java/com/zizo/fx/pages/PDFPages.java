@@ -23,7 +23,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by XMM on 2014-12-31.
+ * 由 XMM 于 2014-12-31.创建
  */
 public class PDFPages {
     private static final String Tag = "self";
@@ -31,9 +31,6 @@ public class PDFPages {
     private static final float MAX_ZOOM = 3.0f;//最大放大倍数
     private static final int PAGESTART =1;
 
-    private String pdfName;//pdf的文件地址
-    private String pdfPassWord;//pdf密码
-    private float pdfZoom;//pdf放大倍数
     private PDFFile pdfFile;//pdf文件对象
     private int pdfPageCount;//pdf文件页数
     private Map<Integer,PDFPage>  pdfPages;//读取的pdf数据
@@ -45,7 +42,7 @@ public class PDFPages {
         PDFPaint.s_doAntiAlias = true;
         PDFFont.sUseFontSubstitution= true;
         HardReference.sKeepCaches= true;
-        pdfPages = new HashMap<Integer,PDFPage>();
+        pdfPages = new HashMap<>();
     }
 
     public void tryToOpenPdf(String pdfPath,String password) throws PDFAuthenticationFailureException{
@@ -57,7 +54,6 @@ public class PDFPages {
             }
             else {
                 Log.i(Tag,"尝试加载文件，文件大小：" + len + "bytes");
-                pdfName = pdfPath;
                 openPdf(f, password);
             }
         }
@@ -81,7 +77,6 @@ public class PDFPages {
             pdfFile = new PDFFile(bb);
         else
             pdfFile = new PDFFile(bb, new PDFPassword(password));
-        pdfPassWord = password;
         pdfPageCount = pdfFile.getNumPages();
     }
 
@@ -125,7 +120,7 @@ public class PDFPages {
         afterLoadPage(pageIndex);
     }
 
-    public void afterLoadPages(){
+    public void afterLoadPages() {
         Log.i(Tag,"已加载pdf文件所有页面");
     }
 
@@ -141,11 +136,7 @@ public class PDFPages {
             float height = pdfPage.getHeight();
             float useZoom = getZoom(zoom);
 
-            RectF clip = null;
-            Bitmap bi = pdfPage.getImage((int) (width * useZoom), (int) (height * useZoom), clip, true, true);
-            pdfZoom = useZoom;
-
-            return bi;
+            return pdfPage.getImage((int) (width * useZoom), (int) (height * useZoom), null, true, true);
         } catch (Throwable e) {
             Log.e(Tag, e.getMessage(), e);
         }
@@ -180,8 +171,7 @@ public class PDFPages {
 
     public ImageRect getRect(int pageIndex){
         PDFPage pdfPage = pdfPages.get(pageIndex);
-        ImageRect ir = new ImageRect(pdfPage.getHeight(),pdfPage.getWidth());
-        return ir;
+        return new ImageRect(pdfPage.getHeight(),pdfPage.getWidth());
     }
 }
 

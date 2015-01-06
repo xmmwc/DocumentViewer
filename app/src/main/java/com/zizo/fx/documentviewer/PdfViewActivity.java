@@ -11,7 +11,6 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
@@ -102,28 +101,7 @@ public class PdfViewActivity extends ActionBarActivity {
 
     private void setSeekBar(){
         mControls = (FrameLayout)findViewById(R.id.seek_layout);
-        FrameLayout viewContainer = (FrameLayout) findViewById(R.id.view_container);
         toggleSeekBar(true);
-
-        mViewPager.setOnTouch(new View.OnTouchListener() {
-            private boolean isMove = false;
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                switch (event.getAction()){
-                    case MotionEvent.ACTION_MOVE:
-                        isMove = true;
-                        break;
-                    case MotionEvent.ACTION_UP:
-                        if (!isMove){
-                            toggleSeekBar(isVisible);
-                            return true;
-                        }
-                        break;
-                }
-
-                return true;
-            }
-        });
     }
 
     private void toggleSeekBar(boolean visible){
