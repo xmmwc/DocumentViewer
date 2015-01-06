@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DocumentViewer</string>
+    <string name="title_activity_pdf_display">PdfDisplayActivity</string>
+    <string name="title_activity_file_list">FileListActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="open">Open</string>
+    <string name="title_activity_pdf_view">PdfViewActivity</string>
+
+</resources>
