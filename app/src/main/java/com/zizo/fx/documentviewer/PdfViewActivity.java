@@ -3,11 +3,13 @@ package com.zizo.fx.documentviewer;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
+import android.support.v4.view.MotionEventCompat;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
 
@@ -20,6 +22,7 @@ import uk.co.senab.photoview.PhotoView;
 
 public class PdfViewActivity extends ActionBarActivity {
 
+    private static final boolean DEBUG = true;
     private static final String Tag = "self";
     //pdf文件地址
     public  static final String mPdfPath = "";
@@ -97,6 +100,30 @@ public class PdfViewActivity extends ActionBarActivity {
     private void setSeekBar(){
         mControls = (FrameLayout)findViewById(R.id.seek_layout);
         toggleSeekBar(true);
+        mViewPager.setClickable(true);
+        mViewPager.setOnInterceptTouchEvent(new OnInterceptTouch() {
+            public boolean isMove;
+
+            @Override
+            public boolean onInterceptTouch(View v, MotionEvent ev) {
+                final int action = MotionEventCompat.getActionMasked(ev);
+                if(action == MotionEvent.ACTION_DOWN || action == MotionEvent.ACTION_CANCEL)
+                    isMove = false;
+                switch (action){
+                    case MotionEvent.ACTION_MOVE:
+                        isMove = true;
+                        break;
+                    case MotionEvent.ACTION_UP:
+                        if(!isMove) {
+                            toggleSeekBar(isVisible);
+                            return true;
+                        }
+                        break;
+                }
+                Log.i(Tag,ev.toString());
+                return false;
+            }
+        });
     }
 
     private void toggleSeekBar(boolean visible){
