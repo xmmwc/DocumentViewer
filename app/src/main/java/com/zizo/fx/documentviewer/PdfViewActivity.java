@@ -31,9 +31,9 @@ public class PdfViewActivity extends ActionBarActivity {
     //pdf文件数据
     private PDFPages mPDFPage;
 
-    private float mControlsHeight = 0;
-    private boolean isVisible;
-    private FrameLayout mControls;
+    //private float mControlsHeight = 0;
+    //private boolean isVisible;
+    //private FrameLayout mControls;
 
     @Override
     public Object onRetainCustomNonConfigurationInstance() {
@@ -58,7 +58,7 @@ public class PdfViewActivity extends ActionBarActivity {
         setContentView(R.layout.activity_pdf_view);
         mViewPager = (PDFViewPager)findViewById(R.id.view_pager);
 
-        setSeekBar();
+        //todo:setSeekBar();
 
         //恢复数据
         restoreInstance();
@@ -97,36 +97,36 @@ public class PdfViewActivity extends ActionBarActivity {
         }
     }
 
-    private void setSeekBar(){
-        mControls = (FrameLayout)findViewById(R.id.seek_layout);
-        toggleSeekBar(true);
-        mViewPager.setClick(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                toggleSeekBar(isVisible);
-            }
-        });
-    }
+//    private void setSeekBar(){
+//        mControls = (FrameLayout)findViewById(R.id.seek_layout);
+//        toggleSeekBar(true);
+//        mViewPager.setClick(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                toggleSeekBar(isVisible);
+//            }
+//        });
+//    }
 
-    private void toggleSeekBar(boolean visible){
-        isVisible = !isVisible;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2) {
-            // If the ViewPropertyAnimator API is available
-            // (Honeycomb MR2 and later), use it to animate the
-            // in-layout UI controls at the bottom of the
-            // screen.
-            if (mControlsHeight == 0) {
-                mControlsHeight = mControls.getHeight();
-            }
-            mControls.animate()
-                    .translationY(visible ? 0 : mControlsHeight);
-        } else {
-            // If the ViewPropertyAnimator APIs aren't
-            // available, simply show or hide the in-layout UI
-            // controls.
-            mControls.setVisibility(visible ? View.VISIBLE : View.GONE);
-        }
-    }
+//    private void toggleSeekBar(boolean visible){
+//        isVisible = !isVisible;
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2) {
+//            // If the ViewPropertyAnimator API is available
+//            // (Honeycomb MR2 and later), use it to animate the
+//            // in-layout UI controls at the bottom of the
+//            // screen.
+//            if (mControlsHeight == 0) {
+//                mControlsHeight = mControls.getHeight();
+//            }
+//            mControls.animate()
+//                    .translationY(visible ? 0 : mControlsHeight);
+//        } else {
+//            // If the ViewPropertyAnimator APIs aren't
+//            // available, simply show or hide the in-layout UI
+//            // controls.
+//            mControls.setVisibility(visible ? View.VISIBLE : View.GONE);
+//        }
+//    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
