@@ -1,10 +1,6 @@
 package com.zizo.fx.documentviewer;
 
-import android.app.ListFragment;
-import android.content.Context;
-import android.database.DataSetObserver;
 import android.os.Looper;
-import android.provider.MediaStore;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -14,7 +10,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import com.zizo.fx.filelistgetter.FileList;
@@ -100,7 +95,7 @@ public class FileListActivity extends ActionBarActivity {
                         @Override
                         public void run() {
                             ArrayAdapter<FileItem> arrayAdapter =
-                                    new ArrayAdapter<FileItem>(rootView.getContext(),android.R.layout.simple_list_item_1,fileItems);
+                                    new ArrayAdapter<>(rootView.getContext(),android.R.layout.simple_list_item_1,fileItems);
                             lv.setAdapter(arrayAdapter);
 
                         }
