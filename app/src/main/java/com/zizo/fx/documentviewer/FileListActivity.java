@@ -2,6 +2,7 @@ package com.zizo.fx.documentviewer;
 
 import android.content.Intent;
 import android.os.Environment;
+import android.os.Looper;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -13,8 +14,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 import android.widget.Button;
+import android.widget.ListView;
+
+import com.zizo.fx.filelistgetter.FileList;
 
 import net.sf.andpdf.pdfviewer.PdfViewerActivity;
+
+import org.json.JSONObject;
+
+import java.util.logging.Handler;
 
 
 public class FileListActivity extends ActionBarActivity {
@@ -68,17 +76,31 @@ public class FileListActivity extends ActionBarActivity {
                                  Bundle savedInstanceState) {
             setRetainInstance(true);
             View rootView = inflater.inflate(R.layout.fragment_file_list, container, false);
+            ListView lv = (ListView) rootView.findViewById(R.id.file_list);
 
-            Button btnOpen = (Button)rootView.findViewById(R.id.open_btn);
-            btnOpen.setOnClickListener(new View.OnClickListener() {
+            new FileList().get("http://192.168.1.64/api/fileinfo")
+            .success(new FileList.OnSuccessEvent() {
                 @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(getActivity(),PdfViewActivity.class);
-                    String path = Environment.getExternalStorageDirectory().getPath();
-                    intent.putExtra(PdfViewActivity.mPdfPath,path + "/mm.pdf");
-                    startActivity(intent);
+                public void success(JSONObject data) {
+                    new android.os.Handler(Looper.getMainLooper()).post(new Runnable() {
+                        @Override
+                        public void run() {
+                            //lv.setAdapter();
+                        }
+                    });
                 }
             });
+
+//            Button btnOpen = (Button)rootView.findViewById(R.id.open_btn);
+//            btnOpen.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    Intent intent = new Intent(getActivity(),PdfViewActivity.class);
+//                    String path = Environment.getExternalStorageDirectory().getPath();
+//                    intent.putExtra(PdfViewActivity.mPdfPath,path + "/mm.pdf");
+//                    startActivity(intent);
+//                }
+//            });
 
             return rootView;
         }
