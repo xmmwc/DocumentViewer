@@ -1,20 +1,17 @@
 package com.zizo.fx.documentviewer;
 
 import android.content.Context;
-import android.support.v4.view.MotionEventCompat;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
-import android.view.View;
-
-import java.util.EventListener;
 
 /**
  * 由 XMM 于 2015-01-05.创建
  */
 public class PDFViewPager extends ViewPager {
 
-    OnInterceptTouch mOnInterceptTouchEvent;
+    private float initialX,initialY;
+    private OnClickListener mClickListener;
 
     public PDFViewPager(Context context) {
         super(context);
@@ -24,18 +21,36 @@ public class PDFViewPager extends ViewPager {
         super(context, attrs);
     }
 
-    public void setOnInterceptTouchEvent(OnInterceptTouch onInterceptTouchEvent){
-        mOnInterceptTouchEvent = onInterceptTouchEvent;
+    public void setClick(OnClickListener clickListener){
+        mClickListener = clickListener;
+    }
+
+    private boolean inRange(float finalX,float finalY) {
+        int rc = 10;
+        return initialX < finalX + rc && initialX > finalX - rc
+                && initialY < finalY + rc && initialY > finalY - rc;
     }
 
     @Override
-    public boolean onInterceptTouchEvent(MotionEvent ev) {
-        if(mOnInterceptTouchEvent!=null) {
-            if(mOnInterceptTouchEvent.onInterceptTouch(this,ev)){
+    public boolean dispatchTouchEvent(MotionEvent ev){
+        int action = ev.getActionMasked();
+        float finalX = 0,finalY = 0;
+        switch (action) {
+            case MotionEvent.ACTION_DOWN:
+                initialX = ev.getX();
+                initialY = ev.getY();
+                break;
+            case MotionEvent.ACTION_UP:
+                finalX = ev.getX();
+                finalY = ev.getY();
+                break;
+        }
+        if(inRange(finalX,finalY)){
+            if(mClickListener !=null){
+                mClickListener.onClick(this);
                 return true;
             }
         }
-        return super.onInterceptTouchEvent(ev);
+        return super.dispatchTouchEvent(ev);
     }
-
 }

@@ -100,28 +100,10 @@ public class PdfViewActivity extends ActionBarActivity {
     private void setSeekBar(){
         mControls = (FrameLayout)findViewById(R.id.seek_layout);
         toggleSeekBar(true);
-        mViewPager.setClickable(true);
-        mViewPager.setOnInterceptTouchEvent(new OnInterceptTouch() {
-            public boolean isMove;
-
+        mViewPager.setClick(new View.OnClickListener() {
             @Override
-            public boolean onInterceptTouch(View v, MotionEvent ev) {
-                final int action = MotionEventCompat.getActionMasked(ev);
-                if(action == MotionEvent.ACTION_DOWN || action == MotionEvent.ACTION_CANCEL)
-                    isMove = false;
-                switch (action){
-                    case MotionEvent.ACTION_MOVE:
-                        isMove = true;
-                        break;
-                    case MotionEvent.ACTION_UP:
-                        if(!isMove) {
-                            toggleSeekBar(isVisible);
-                            return true;
-                        }
-                        break;
-                }
-                Log.i(Tag,ev.toString());
-                return false;
+            public void onClick(View v) {
+                toggleSeekBar(isVisible);
             }
         });
     }
