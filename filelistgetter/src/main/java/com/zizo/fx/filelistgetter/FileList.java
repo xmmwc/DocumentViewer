@@ -55,44 +55,49 @@ public class FileList {
         return null;
     }
 
-    private String getData(String url) {
-        StringBuilder builder = new StringBuilder();
-        HttpClient httpclient = new DefaultHttpClient();
-        try {
-            HttpResponse httpResponse = httpclient.execute(new HttpGet(url));
-            StatusLine statusLine = httpResponse.getStatusLine();
-            int statusCode = statusLine.getStatusCode();
-            if (statusCode == 200) {
-                HttpEntity entity = httpResponse.getEntity();
-                InputStream content = entity.getContent();
-                BufferedReader reader = new BufferedReader(new InputStreamReader(content));
-                String line;
-                while ((line = reader.readLine()) != null) {
-                    builder.append(line);
-                }
-                return builder.toString();
-            }else{
-                if (mOnErrorEvent !=null)
-                    mOnErrorEvent.error(statusCode);
-            }
-        } catch (IOException e) {
-            Log.e(TAG,e.getMessage(),e);
-            e.printStackTrace();
-            if (mOnErrorEvent !=null)
-                mOnErrorEvent.error(500);
-        }
-        return null;
-    }
+
 
     private class HttpAsyncTask extends AsyncTask<String, Void, String> {
+        private String getData(String url) {
+            StringBuilder builder = new StringBuilder();
+            HttpClient httpclient = new DefaultHttpClient();
+            try {
+                HttpResponse httpResponse = httpclient.execute(new HttpGet(url));
+                StatusLine statusLine = httpResponse.getStatusLine();
+                int statusCode = statusLine.getStatusCode();
+                if (statusCode == 200) {
+                    HttpEntity entity = httpResponse.getEntity();
+                    InputStream content = entity.getContent();
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(content));
+                    String line;
+                    while ((line = reader.readLine()) != null) {
+                        builder.append(line);
+                    }
+                    String result = builder.toString();
+                    if (mOnSuccessEvent != null)
+                        mOnSuccessEvent.success(toJson(result));
+                    return result;
+                }else{
+                    if (mOnErrorEvent !=null)
+                        mOnErrorEvent.error(statusCode);
+                }
+            } catch (IOException e) {
+                Log.e(TAG,e.getMessage(),e);
+                e.printStackTrace();
+                if (mOnErrorEvent !=null)
+                    mOnErrorEvent.error(500);
+            }
+            return null;
+        }
+
+
         @Override
         protected String doInBackground(String... urls) {
             return getData(urls[0]);
         }
         @Override
         protected void onPostExecute(String result) {
-            if (mOnSuccessEvent!=null)
-                mOnSuccessEvent.success(toJson(result));
+
         }
     }
 

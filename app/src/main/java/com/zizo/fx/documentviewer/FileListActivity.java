@@ -167,7 +167,12 @@ public class FileListActivity extends ActionBarActivity {
                         .error(new FileList.OnErrorEvent() {
                             @Override
                             public void error(int statusCode) {
-                                Toast.makeText(rootView.getContext(), "网络连接失败", Toast.LENGTH_SHORT);
+                                new Handler(Looper.getMainLooper()).post(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        Toast.makeText(getActivity(), "网络连接失败", Toast.LENGTH_SHORT).show();
+                                    }
+                                });
                             }
                         });
             }else{
