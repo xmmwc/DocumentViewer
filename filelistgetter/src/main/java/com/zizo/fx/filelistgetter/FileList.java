@@ -9,6 +9,7 @@ import org.apache.http.StatusLine;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -21,7 +22,7 @@ import java.io.InputStreamReader;
  * 由 XMM 于 2015-01-07.创建
  */
 public class FileList {
-    final private String Tag = "FileList";
+    private final String TAG = "FileList";
     OnSuccessEvent mOnSuccessEvent;
     OnErrorEvent mOnErrorEvent;
 
@@ -44,11 +45,11 @@ public class FileList {
         return this;
     }
 
-    private JSONObject toJson(String jsonString){
+    private JSONArray toJson(String jsonString){
         try {
-            return new JSONObject(jsonString);
+            return new JSONArray(jsonString);
         } catch (JSONException e) {
-            Log.e(Tag,e.getMessage(),e);
+            Log.e(TAG,e.getMessage(),e);
             e.printStackTrace();
         }
         return null;
@@ -69,14 +70,18 @@ public class FileList {
                 while ((line = reader.readLine()) != null) {
                     builder.append(line);
                 }
+                return builder.toString();
             }else{
                 if (mOnErrorEvent !=null)
                     mOnErrorEvent.error(statusCode);
             }
         } catch (IOException e) {
+            Log.e(TAG,e.getMessage(),e);
             e.printStackTrace();
+            if (mOnErrorEvent !=null)
+                mOnErrorEvent.error(500);
         }
-        return builder.toString();
+        return null;
     }
 
     private class HttpAsyncTask extends AsyncTask<String, Void, String> {
@@ -92,7 +97,7 @@ public class FileList {
     }
 
     public interface OnSuccessEvent{
-        public void success(JSONObject data);
+        public void success(JSONArray data);
     }
 
     public interface OnErrorEvent {
