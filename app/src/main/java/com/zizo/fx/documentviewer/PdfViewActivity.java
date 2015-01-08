@@ -66,7 +66,7 @@ public class PdfViewActivity extends ActionBarActivity {
             mPDFPagerAdapter.setPdf(mPDFPage);
             mViewPager.setAdapter(mPDFPagerAdapter);
         } else {
-            mPDFPage = new PDFPages(this) {
+            mPDFPage = new PDFPages() {
                 //全部页数据加载完
                 @Override
                 public void afterLoadPages() {
