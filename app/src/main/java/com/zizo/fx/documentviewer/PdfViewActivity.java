@@ -1,5 +1,7 @@
 package com.zizo.fx.documentviewer;
 
+import android.net.Uri;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Looper;
 import android.support.v7.app.ActionBarActivity;
@@ -9,6 +11,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import com.sun.pdfview.decrypt.PDFAuthenticationFailureException;
 import com.zizo.fx.pages.PDFPages;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
 
 
 public class PdfViewActivity extends ActionBarActivity {
@@ -20,6 +27,8 @@ public class PdfViewActivity extends ActionBarActivity {
     private PDFViewPager mViewPager;
     //pdf文件数据
     private PDFPages mPDFPage;
+
+    private File mTmpFile;
 
     //private float mControlsHeight = 0;
     //private boolean isVisible;
@@ -59,7 +68,7 @@ public class PdfViewActivity extends ActionBarActivity {
             mPDFPagerAdapter.setPdf(mPDFPage);
             mViewPager.setAdapter(mPDFPagerAdapter);
         }else{
-            mPDFPage = new PDFPages(){
+            mPDFPage = new PDFPages(this){
                 //全部页数据加载完
                 @Override
                 public void afterLoadPages(){
@@ -74,6 +83,7 @@ public class PdfViewActivity extends ActionBarActivity {
                 }
             };
             String pdfPath = getIntent().getStringExtra(PdfViewActivity.mPdfPath);
+            pdfPath = storeUriContentToFile(getIntent().getData());
             try {
                 //尝试打开pdf文件
                 mPDFPage.tryToOpenPdf(pdfPath,null);
@@ -85,6 +95,39 @@ public class PdfViewActivity extends ActionBarActivity {
             //开启线程加载pdf数据
             mPDFPage.loadPagesByThread();
         }
+    }
+
+    private String storeUriContentToFile(Uri uri) {
+        String result = null;
+        try {
+            if (mTmpFile == null) {
+                File root = Environment.getExternalStorageDirectory();
+                if (root == null)
+                    throw new Exception("external storage dir not found");
+                mTmpFile = new File(root,"DocumentViewer/document_viewer_temp.pdf");
+                mTmpFile.getParentFile().mkdirs();
+                mTmpFile.delete();
+            }
+            else {
+                mTmpFile.delete();
+            }
+            InputStream is = getContentResolver().openInputStream(uri);
+            OutputStream os = new FileOutputStream(mTmpFile);
+            byte[] buf = new byte[1024];
+            int cnt = is.read(buf);
+            while (cnt > 0) {
+                os.write(buf, 0, cnt);
+                cnt = is.read(buf);
+            }
+            os.close();
+            is.close();
+            result = mTmpFile.getCanonicalPath();
+            mTmpFile.deleteOnExit();
+        }
+        catch (Exception e) {
+            Log.e(Tag, e.getMessage(), e);
+        }
+        return result;
     }
 
 //    private void setSeekBar(){

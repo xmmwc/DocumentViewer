@@ -1,8 +1,11 @@
 package com.zizo.fx.pages;
 
+import android.content.ContextWrapper;
 import android.graphics.Bitmap;
-import android.graphics.RectF;
+import android.net.Uri;
+import android.os.Environment;
 import android.util.Log;
+import android.content.Context;
 
 import com.sun.pdfview.PDFFile;
 import com.sun.pdfview.PDFImage;
@@ -16,7 +19,10 @@ import net.sf.andpdf.nio.ByteBuffer;
 import net.sf.andpdf.refs.HardReference;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.io.RandomAccessFile;
 import java.nio.channels.FileChannel;
 import java.util.HashMap;
@@ -25,8 +31,8 @@ import java.util.Map;
 /**
  * 由 XMM 于 2014-12-31.创建
  */
-public class PDFPages {
-    private static final String Tag = "self";
+public class PDFPages{
+    private static final String Tag = "PDFPages";
     private static final float MIN_ZOOM = 0.25f;//最小放大倍数
     private static final float MAX_ZOOM = 3.0f;//最大放大倍数
     private static final int PAGESTART =1;
@@ -37,7 +43,7 @@ public class PDFPages {
 
     private Thread readThread;
 
-    public PDFPages() {
+    public PDFPages(Context base) {
         PDFImage.sShowImages = true;
         PDFPaint.s_doAntiAlias = true;
         PDFFont.sUseFontSubstitution= true;
@@ -79,6 +85,7 @@ public class PDFPages {
             pdfFile = new PDFFile(bb, new PDFPassword(password));
         pdfPageCount = pdfFile.getNumPages();
     }
+
 
     public synchronized void loadPagesByThread(){
         if(readThread !=null) return;

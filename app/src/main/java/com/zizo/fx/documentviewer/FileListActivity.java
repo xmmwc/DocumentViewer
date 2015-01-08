@@ -1,7 +1,7 @@
 package com.zizo.fx.documentviewer;
 
 import android.app.Activity;
-import android.app.LauncherActivity;
+import android.content.Intent;
 import android.os.Handler;
 import android.os.Looper;
 import android.support.v7.app.ActionBarActivity;
@@ -26,7 +26,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -71,12 +70,14 @@ public class FileListActivity extends ActionBarActivity {
     }
 
     public static class FileListFragment extends Fragment {
-        static final String APIPath = "http://192.168.1.64:1213/api/fileinfo";
+        private String Host = "http://192.168.1.64:1213";
+        private String APIPath = Host + "/api/FileInfo";
+        private String DownloadPath = Host + "";
 
         private View rootView;
         private ListView listView;
         private FileListAdapter fileListAdapter;
-        private List<FileItem> mfileItems;
+        private List<FileItem> mFileItems;
 
         private List<FileItem> getFileItems(JSONArray data){
             List<FileItem> fileItems = new ArrayList<>();
@@ -110,7 +111,9 @@ public class FileListActivity extends ActionBarActivity {
         }
 
         private void openPdf(FileItem fileItem) {
-            //todo:
+            Intent intent = new Intent(getActivity(), PdfViewActivity.class);
+            intent.putExtra(PdfViewActivity.mPdfPath, DownloadPath + "/" + fileItem.FilePath);
+            startActivity(intent);
         }
 
         private void doClick(FileItem fileItem){
@@ -126,42 +129,50 @@ public class FileListActivity extends ActionBarActivity {
             }
         }
 
-        private void getFileList() {
+        private void setListView(final List<FileItem> listItems){
+            fileListAdapter = new FileListAdapter(getActivity(), listItems);
+            listView.setAdapter(fileListAdapter);
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    FileItem selectedItem = listItems.get(position);
+                    doClick(selectedItem);
+                }
+            });
+        }
+
+        private void getFileList(boolean forceRefresh) {
             Bundle bundle = this.getArguments();
-            String dirPath = "";
+            String dirPath;
             try {
                 dirPath = bundle.getString("nextPath");
             } catch (Exception e) {
                 Log.i(Tag, "没有下级文件夹地址");
                 dirPath = "";
             }
-            new FileList().get(APIPath + dirPath)
-                    .success(new FileList.OnSuccessEvent() {
-                        @Override
-                        public void success(JSONArray data) {
-                            mfileItems = getFileItems(data);
-                            new Handler(Looper.getMainLooper()).post(new Runnable() {
-                                @Override
-                                public void run() {
-                                    fileListAdapter = new FileListAdapter(getActivity(), mfileItems);
-                                    listView.setAdapter(fileListAdapter);
-                                    listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                                        @Override
-                                        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                                            FileItem selectedItem = mfileItems.get(position);
-                                            doClick(selectedItem);
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    })
-                    .error(new FileList.OnErrorEvent() {
-                        @Override
-                        public void error(int statusCode) {
-                            Toast.makeText(rootView.getContext(), "网络连接失败", Toast.LENGTH_SHORT);
-                        }
-                    });
+            if (mFileItems == null || forceRefresh){
+                new FileList().get(APIPath + dirPath)
+                        .success(new FileList.OnSuccessEvent() {
+                            @Override
+                            public void success(JSONArray data) {
+                                mFileItems = getFileItems(data);
+                                new Handler(Looper.getMainLooper()).post(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        setListView(mFileItems);
+                                    }
+                                });
+                            }
+                        })
+                        .error(new FileList.OnErrorEvent() {
+                            @Override
+                            public void error(int statusCode) {
+                                Toast.makeText(rootView.getContext(), "网络连接失败", Toast.LENGTH_SHORT);
+                            }
+                        });
+            }else{
+                setListView(mFileItems);
+            }
         }
 
         @Override
@@ -171,19 +182,7 @@ public class FileListActivity extends ActionBarActivity {
             rootView = inflater.inflate(R.layout.fragment_file_list, container, false);
             listView = (ListView) rootView.findViewById(R.id.file_list);
 
-            getFileList();
-
-
-//            Button btnOpen = (Button)rootView.findViewById(R.id.open_btn);
-//            btnOpen.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    Intent intent = new Intent(getActivity(),PdfViewActivity.class);
-//                    String path = Environment.getExternalStorageDirectory().getPath();
-//                    intent.putExtra(PdfViewActivity.mPdfPath,path + "/mm.pdf");
-//                    startActivity(intent);
-//                }
-//            });
+            getFileList(false);
 
             return rootView;
         }
