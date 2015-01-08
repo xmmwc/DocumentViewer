@@ -1,9 +1,6 @@
 package com.zizo.fx.pages;
 
-import android.content.ContextWrapper;
 import android.graphics.Bitmap;
-import android.net.Uri;
-import android.os.Environment;
 import android.util.Log;
 import android.content.Context;
 
@@ -19,10 +16,7 @@ import net.sf.andpdf.nio.ByteBuffer;
 import net.sf.andpdf.refs.HardReference;
 
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 import java.io.RandomAccessFile;
 import java.nio.channels.FileChannel;
 import java.util.HashMap;
@@ -43,7 +37,7 @@ public class PDFPages{
 
     private Thread readThread;
 
-    public PDFPages(Context base) {
+    public PDFPages() {
         PDFImage.sShowImages = true;
         PDFPaint.s_doAntiAlias = true;
         PDFFont.sUseFontSubstitution= true;
@@ -83,6 +77,7 @@ public class PDFPages{
             pdfFile = new PDFFile(bb);
         else
             pdfFile = new PDFFile(bb, new PDFPassword(password));
+
         pdfPageCount = pdfFile.getNumPages();
     }
 
@@ -113,17 +108,13 @@ public class PDFPages{
     }
 
     private void loadPage(int pageIndex)throws Exception {
-        try {
-            if (pdfFile == null) {
-                Log.e(Tag, "pdf文件还没加载");
-                return;
-            }
-            PDFPage pdfPage = pdfFile.getPage(pageIndex, true);
-            pdfPages.put(pageIndex, pdfPage);
-
-        } catch (Throwable e) {
-            Log.e(Tag, e.getMessage(), e);
+        if (pdfFile == null) {
+            Log.e(Tag, "pdf文件还没加载");
+            return;
         }
+        PDFPage pdfPage = pdfFile.getPage(pageIndex, true);
+        pdfPages.put(pageIndex, pdfPage);
+
         afterLoadPage(pageIndex);
     }
 
