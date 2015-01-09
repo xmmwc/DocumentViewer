@@ -80,7 +80,6 @@ public class PDFPages{
         pdfPageCount = pdfFile.getNumPages();
     }
 
-
     public synchronized void loadPagesByThread(){
         if(readThread !=null) return;
 
@@ -99,7 +98,7 @@ public class PDFPages{
         readThread.start();
     }
 
-    private void loadPages() throws Exception {
+    public void loadPages() throws Exception {
         for (int i = PAGESTART; i <= pdfPageCount ; i++) {
             loadPage(i);
         }

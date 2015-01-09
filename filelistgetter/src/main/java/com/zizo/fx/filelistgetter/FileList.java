@@ -10,7 +10,6 @@ import org.apache.http.StatusLine;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.protocol.HTTP;
 import org.json.JSONArray;
 import org.json.JSONException;
 
@@ -24,53 +23,19 @@ import java.io.InputStreamReader;
  */
 public class FileList {
     private final String TAG = "FileList";
-    FileListAsyncTask flat;
-
-    public FileList() {
-        flat = new FileListAsyncTask();
-    }
 
     public void get(String url){
-        flat.execute(url);
+        new FileListAsyncTask().execute(url);
     }
 
-    public void success(JSONArray ja){
+    public void success(JSONArray data){}
 
-    }
+    public void error(String errorMsg){}
 
-    public void error(int statueCode){
+    private class FileListAsyncTask extends AsyncTask<String,Void,JSONArray>{
 
-    }
+        private String errorMsg;
 
-    public class FileListAsyncTask extends HttpAsyncTask<JSONArray,Integer>{
-        private String getData(String url) {
-            StringBuilder builder = new StringBuilder();
-            HttpClient httpclient = new DefaultHttpClient();
-            try {
-                HttpResponse httpResponse = httpclient.execute(new HttpGet(url));
-                StatusLine statusLine = httpResponse.getStatusLine();
-                int statusCode = statusLine.getStatusCode();
-                if (statusCode == 200) {
-                    HttpEntity entity = httpResponse.getEntity();
-                    InputStream content = entity.getContent();
-                    BufferedReader reader = new BufferedReader(new InputStreamReader(content));
-                    String line;
-                    while ((line = reader.readLine()) != null) {
-                        builder.append(line);
-                    }
-                    String result = builder.toString();
-                    onSuccessEvent(toJson(result));
-                    return result;
-                }else {
-                    onErrorEvent(statusCode);
-                }
-            } catch (IOException e) {
-                Log.e(TAG, e.getMessage(), e);
-                e.printStackTrace();
-                onErrorEvent(500);
-            }
-            return null;
-        }
         private JSONArray toJson(String jsonString){
             try {
                 return new JSONArray(jsonString);
@@ -82,18 +47,43 @@ public class FileList {
         }
 
         @Override
-        protected String doInBackground(String... urls) {
-            return getData(urls[0]);
+        protected JSONArray doInBackground(String... urls) {
+            StringBuilder builder = new StringBuilder();
+            HttpClient httpclient = new DefaultHttpClient();
+            try {
+                HttpResponse httpResponse = httpclient.execute(new HttpGet(urls[0]));
+                StatusLine statusLine = httpResponse.getStatusLine();
+                int statusCode = statusLine.getStatusCode();
+                if (statusCode == 200) {
+                    HttpEntity entity = httpResponse.getEntity();
+                    InputStream content = entity.getContent();
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(content));
+                    String line;
+                    while ((line = reader.readLine()) != null) {
+                        builder.append(line);
+                    }
+                    String result = builder.toString();
+                    return toJson(result);
+                }else{
+                    errorMsg = "网络错误";
+                }
+            } catch (IOException e) {
+                Log.e(TAG, e.getMessage(), e);
+                e.printStackTrace();
+                errorMsg = e.getMessage();
+            }
+            cancel(true);
+            return null;
         }
 
         @Override
-        public void onSuccessEvent(JSONArray sp) {
-            success(sp);
+        protected  void onPostExecute(JSONArray PDFFile) {
+            success(PDFFile);
         }
 
         @Override
-        public void onErrorEvent(Integer ep) {
-            error(ep);
+        protected void onCancelled(){
+            error(errorMsg);
         }
     }
 }

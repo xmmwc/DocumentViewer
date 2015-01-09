@@ -1,21 +1,12 @@
 package com.zizo.fx.documentviewer;
 
-import android.nfc.Tag;
+import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Environment;
-import android.os.Handler;
-import android.os.Looper;
-import android.provider.ContactsContract;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.sun.pdfview.decrypt.PDFAuthenticationFailureException;
-import com.zizo.fx.filelistgetter.FileList;
-import com.zizo.fx.filelistgetter.HttpAsyncTask;
 import com.zizo.fx.pages.PDFPages;
 
 import java.io.BufferedReader;
@@ -25,13 +16,11 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
-import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.net.URLConnection;
 
 
-public class PdfViewActivity extends ActionBarActivity {
+public class PdfViewActivity extends Activity{
 
     private static final String Tag = "PdfViewActivity";
     //pdf文件地址
@@ -48,15 +37,15 @@ public class PdfViewActivity extends ActionBarActivity {
     //private FrameLayout mControls;
 
     @Override
-    public Object onRetainCustomNonConfigurationInstance() {
+    public Object onRetainNonConfigurationInstance() {
         Log.i(Tag, "准备还原数据");
         return this;
     }
 
     private boolean restoreInstance() {
-        if (getLastCustomNonConfigurationInstance()==null)
+        if (getLastNonConfigurationInstance()==null)
             return false;
-        PdfViewActivity inst =(PdfViewActivity)getLastCustomNonConfigurationInstance();
+        PdfViewActivity inst =(PdfViewActivity)getLastNonConfigurationInstance();
         if (inst != this) {
             Log.i(Tag, "正在还原数据");
             mPDFPage = inst.mPDFPage;
@@ -67,6 +56,7 @@ public class PdfViewActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_pdf_view);
         mViewPager = (PDFViewPager)findViewById(R.id.view_pager);
 
@@ -81,65 +71,21 @@ public class PdfViewActivity extends ActionBarActivity {
     }
 
     private void tryLoadPdf(String url){
-        try {
-            new StoreHttpAsyncTask(){
-                @Override
-                public void onSuccessEvent(final String pdfPath) {
-                    new Handler(Looper.getMainLooper()).post(new Runnable() {
-                        @Override
-                        public void run() {
-                            loadPdf(pdfPath);
-                        }
-                    });
-                }
-
-                @Override
-                public void onErrorEvent(final Exception e) {
-                    new Handler(Looper.getMainLooper()).post(new Runnable() {
-                        @Override
-                        public void run() {
-                            Toast.makeText(getApplicationContext(),e.getMessage(), Toast.LENGTH_SHORT).show();
-                        }
-                    });
-                }
-            }.execute(url);
-        }catch (Throwable e){
-            Log.e(Tag,e.getMessage(),e);
-            Toast.makeText(this,e.getMessage(),Toast.LENGTH_SHORT).show();
+        if (mPDFPage==null) {
+            new StoreHttpAsyncTask().execute(url);
+        }else {
+            setPdfView();
         }
     }
 
-    private void loadPdf(String path) {
-        //如果数据还在直接渲染
-        if (mPDFPage != null) {
+    private void setPdfView(){
+        try {
             PDFPagerAdapter mPDFPagerAdapter = new PDFPagerAdapter();
             mPDFPagerAdapter.setPdf(mPDFPage);
             mViewPager.setAdapter(mPDFPagerAdapter);
-        } else {
-            mPDFPage = new PDFPages() {
-                //全部页数据加载完
-                @Override
-                public void afterLoadPages() {
-                    new Handler(Looper.getMainLooper()).post(new Runnable() {
-                        @Override
-                        public void run() {
-                            PDFPagerAdapter mPDFPagerAdapter = new PDFPagerAdapter();
-                            mPDFPagerAdapter.setPdf(mPDFPage);
-                            mViewPager.setAdapter(mPDFPagerAdapter);
-                        }
-                    });
-                }
-            };
-            try {
-                //尝试打开pdf文件
-                mPDFPage.tryToOpenPdf(path, null);
-            } catch (PDFAuthenticationFailureException e) {
-                e.printStackTrace();
-                Log.e(Tag, e.getMessage(), e);
-                //todo：如果打不开提示输入密码
-            }
-            //开启线程加载pdf数据
-            mPDFPage.loadPagesByThread();
+        } catch (Throwable e) {
+            Log.e(Tag, e.getMessage(), e);
+            Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -153,11 +99,13 @@ public class PdfViewActivity extends ActionBarActivity {
                 if (root == null)
                     throw new Exception("没有找到存储空间");
                 mTmpFile = new File(root, "DocumentViewer/document_viewer_temp.pdf");
-                boolean isMake = mTmpFile.getParentFile().mkdirs();
-
-                mTmpFile.delete();
+                if(mTmpFile.getParentFile().mkdirs())
+                    Log.i(Tag,"创建了文件夹：" + mTmpFile.getParentFile().getPath());
+                if(mTmpFile.delete())
+                    Log.i(Tag,"删除了文件：" + mTmpFile.getPath());
             } else {
-                mTmpFile.delete();
+                if(mTmpFile.delete())
+                    Log.i(Tag,"删除了文件：" + mTmpFile.getPath());
             }
 
             urlConnection = (HttpURLConnection) url.openConnection();
@@ -183,7 +131,6 @@ public class PdfViewActivity extends ActionBarActivity {
             } else {
                 throw new Exception("网络连接失败");
             }
-
         }catch (FileNotFoundException e){
             assert urlConnection != null;
             InputStream is = urlConnection.getErrorStream();
@@ -201,6 +148,7 @@ public class PdfViewActivity extends ActionBarActivity {
         }
         return result;
     }
+
 
 //    private void setSeekBar(){
 //        mControls = (FrameLayout)findViewById(R.id.seek_layout);
@@ -233,65 +181,37 @@ public class PdfViewActivity extends ActionBarActivity {
 //        }
 //    }
 
-    private class StoreHttpAsyncTask extends HttpAsyncTask<String,Exception>{
+    private class StoreHttpAsyncTask extends AsyncTask<String,Void,PDFPages> {
 
         private String Tag = "StoreHttpAsyncTask";
 
         @Override
-        protected String doInBackground(String... urls) {
+        protected PDFPages doInBackground(String... urls) {
             try {
                 String pdfPath = storePdfToFile(urls[0]);
-                onSuccessEvent(pdfPath);
-                return pdfPath;
+                mPDFPage = new PDFPages();
+                mPDFPage.tryToOpenPdf(pdfPath, null);
+                mPDFPage.loadPages();
             } catch (Exception e) {
                 Log.e(Tag, e.getMessage(), e);
                 e.printStackTrace();
-                onErrorEvent(e);
+//                if ((e.getClass()).equals(PDFAuthenticationFailureException.class)) {
+//                    //todo:输入密码
+//                }
+                cancel(true);
             }
-            return null;
+            return mPDFPage;
         }
 
         @Override
-        public void onSuccessEvent(String sp) {
-
+        protected  void onPostExecute(PDFPages PDFFile) {
+            if (PDFFile != null)
+                setPdfView();
         }
 
         @Override
-        public void onErrorEvent(Exception ep) {
-
+        protected void onCancelled(){
+            Toast.makeText(PdfViewActivity.this, "PDF加载失败", Toast.LENGTH_SHORT).show();
         }
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_pdf_view, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    public boolean onPrepareOptionsMenu(Menu menu) {
-        return super.onPrepareOptionsMenu(menu);
-    }
-
-
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
     }
 }

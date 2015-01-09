@@ -2,8 +2,6 @@ package com.zizo.fx.documentviewer;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.os.Handler;
-import android.os.Looper;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -21,7 +19,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.zizo.fx.filelistgetter.FileList;
-import com.zizo.fx.filelistgetter.HttpAsyncTask;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -156,21 +153,11 @@ public class FileListActivity extends ActionBarActivity {
                     @Override
                     public void success(JSONArray data) {
                         mFileItems = getFileItems(data);
-                        new Handler(Looper.getMainLooper()).post(new Runnable() {
-                            @Override
-                            public void run() {
-                                setListView(mFileItems);
-                            }
-                        });
+                        setListView(mFileItems);
                     }
                     @Override
-                    public void error(int statusCode) {
-                        new Handler(Looper.getMainLooper()).post(new Runnable() {
-                            @Override
-                            public void run() {
-                                Toast.makeText(getActivity(), "网络连接失败", Toast.LENGTH_SHORT).show();
-                            }
-                        });
+                    public void error(String errorMsg) {
+                        Toast.makeText(getActivity(), errorMsg, Toast.LENGTH_SHORT).show();
                     }
                 }.get(APIPath + dirPath);
             } else {
