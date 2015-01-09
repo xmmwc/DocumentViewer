@@ -2,7 +2,6 @@ package com.zizo.fx.pages;
 
 import android.graphics.Bitmap;
 import android.util.Log;
-import android.content.Context;
 
 import com.sun.pdfview.PDFFile;
 import com.sun.pdfview.PDFImage;

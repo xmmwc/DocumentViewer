@@ -21,6 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.zizo.fx.filelistgetter.FileList;
+import com.zizo.fx.filelistgetter.HttpAsyncTask;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -71,8 +72,8 @@ public class FileListActivity extends ActionBarActivity {
 
     public static class FileListFragment extends Fragment {
         private String Host = "http://192.168.1.64:1213";
-        private String APIPath = Host + "/api/FileInfo";
-        private String DownloadPath = Host + "";
+        private String APIPath = Host + "/API/FileInfo";
+        private String DownloadPath = Host + "/API/File";
 
         private View rootView;
         private ListView listView;
@@ -150,32 +151,29 @@ public class FileListActivity extends ActionBarActivity {
                 Log.i(Tag, "没有下级文件夹地址");
                 dirPath = "";
             }
-            if (mFileItems == null || forceRefresh){
-                new FileList().get(APIPath + dirPath)
-                        .success(new FileList.OnSuccessEvent() {
+            if (mFileItems == null || forceRefresh) {
+                new FileList() {
+                    @Override
+                    public void success(JSONArray data) {
+                        mFileItems = getFileItems(data);
+                        new Handler(Looper.getMainLooper()).post(new Runnable() {
                             @Override
-                            public void success(JSONArray data) {
-                                mFileItems = getFileItems(data);
-                                new Handler(Looper.getMainLooper()).post(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        setListView(mFileItems);
-                                    }
-                                });
-                            }
-                        })
-                        .error(new FileList.OnErrorEvent() {
-                            @Override
-                            public void error(int statusCode) {
-                                new Handler(Looper.getMainLooper()).post(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        Toast.makeText(getActivity(), "网络连接失败", Toast.LENGTH_SHORT).show();
-                                    }
-                                });
+                            public void run() {
+                                setListView(mFileItems);
                             }
                         });
-            }else{
+                    }
+                    @Override
+                    public void error(int statusCode) {
+                        new Handler(Looper.getMainLooper()).post(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(getActivity(), "网络连接失败", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                    }
+                }.get(APIPath + dirPath);
+            } else {
                 setListView(mFileItems);
             }
         }
