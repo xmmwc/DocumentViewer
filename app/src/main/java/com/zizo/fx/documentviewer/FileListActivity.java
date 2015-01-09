@@ -213,15 +213,6 @@ public class FileListActivity extends ActionBarActivity {
                     return R.drawable.ic_blank;
             }
         }
-
-        static private List<String> getTitles(List<FileItem> fileItems){
-            List<String> titleList = new ArrayList<>();
-
-            for (int i = 0; i < fileItems.size(); i++) {
-                titleList.add(fileItems.get(i).Name);
-            }
-            return titleList;
-        }
     }
 
     public static class FileItem{
