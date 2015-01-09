@@ -20,11 +20,11 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 
-public class PdfViewActivity extends Activity{
+public class PdfViewActivity extends Activity {
 
     private static final String Tag = "PdfViewActivity";
     //pdf文件地址
-    public  static final String mPdfPath = "";
+    public static final String mPdfPath = "";
     //pdf翻页对象
     private PDFViewPager mViewPager;
     //pdf文件数据
@@ -43,9 +43,9 @@ public class PdfViewActivity extends Activity{
     }
 
     private boolean restoreInstance() {
-        if (getLastNonConfigurationInstance()==null)
+        if (getLastNonConfigurationInstance() == null)
             return false;
-        PdfViewActivity inst =(PdfViewActivity)getLastNonConfigurationInstance();
+        PdfViewActivity inst = (PdfViewActivity) getLastNonConfigurationInstance();
         if (inst != this) {
             Log.i(Tag, "正在还原数据");
             mPDFPage = inst.mPDFPage;
@@ -58,7 +58,7 @@ public class PdfViewActivity extends Activity{
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_pdf_view);
-        mViewPager = (PDFViewPager)findViewById(R.id.view_pager);
+        mViewPager = (PDFViewPager) findViewById(R.id.view_pager);
 
         //todo:setSeekBar();
 
@@ -70,15 +70,15 @@ public class PdfViewActivity extends Activity{
         tryLoadPdf(pdfPath);
     }
 
-    private void tryLoadPdf(String url){
-        if (mPDFPage==null) {
-            new StoreHttpAsyncTask().execute(url);
-        }else {
+    private void tryLoadPdf(String url) {
+        if (mPDFPage == null) {
+            new LoadPDFAsyncTask().execute(url);
+        } else {
             setPdfView();
         }
     }
 
-    private void setPdfView(){
+    private void setPdfView() {
         try {
             PDFPagerAdapter mPDFPagerAdapter = new PDFPagerAdapter();
             mPDFPagerAdapter.setPdf(mPDFPage);
@@ -99,13 +99,13 @@ public class PdfViewActivity extends Activity{
                 if (root == null)
                     throw new Exception("没有找到存储空间");
                 mTmpFile = new File(root, "DocumentViewer/document_viewer_temp.pdf");
-                if(mTmpFile.getParentFile().mkdirs())
-                    Log.i(Tag,"创建了文件夹：" + mTmpFile.getParentFile().getPath());
-                if(mTmpFile.delete())
-                    Log.i(Tag,"删除了文件：" + mTmpFile.getPath());
+                if (mTmpFile.getParentFile().mkdirs())
+                    Log.i(Tag, "创建了文件夹：" + mTmpFile.getParentFile().getPath());
+                if (mTmpFile.delete())
+                    Log.i(Tag, "删除了文件：" + mTmpFile.getPath());
             } else {
-                if(mTmpFile.delete())
-                    Log.i(Tag,"删除了文件：" + mTmpFile.getPath());
+                if (mTmpFile.delete())
+                    Log.i(Tag, "删除了文件：" + mTmpFile.getPath());
             }
 
             urlConnection = (HttpURLConnection) url.openConnection();
@@ -131,7 +131,7 @@ public class PdfViewActivity extends Activity{
             } else {
                 throw new Exception("网络连接失败");
             }
-        }catch (FileNotFoundException e){
+        } catch (FileNotFoundException e) {
             assert urlConnection != null;
             InputStream is = urlConnection.getErrorStream();
             BufferedReader theReader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
@@ -141,7 +141,7 @@ public class PdfViewActivity extends Activity{
                 response.append(reply);
             }
             String ErrorMsg = response.toString();
-            Log.e(Tag,ErrorMsg);
+            Log.e(Tag, ErrorMsg);
         } catch (Exception e) {
             Log.e(Tag, e.getMessage(), e);
             throw e;
@@ -181,37 +181,45 @@ public class PdfViewActivity extends Activity{
 //        }
 //    }
 
-    private class StoreHttpAsyncTask extends AsyncTask<String,Void,PDFPages> {
+    private class LoadPDFAsyncTaskResult {
+        private PDFPages data;
+        private Exception error;
+    }
+
+    private class LoadPDFAsyncTask extends AsyncTask<String, Void, LoadPDFAsyncTaskResult> {
 
         private String Tag = "StoreHttpAsyncTask";
 
         @Override
-        protected PDFPages doInBackground(String... urls) {
+        protected LoadPDFAsyncTaskResult doInBackground(String... urls) {
+            LoadPDFAsyncTaskResult result = new LoadPDFAsyncTaskResult();
             try {
                 String pdfPath = storePdfToFile(urls[0]);
-                mPDFPage = new PDFPages();
-                mPDFPage.tryToOpenPdf(pdfPath, null);
-                mPDFPage.loadPages();
+                PDFPages pdfPage = new PDFPages();
+                pdfPage.tryToOpenPdf(pdfPath, null);
+                pdfPage.loadPages();
+                result.data = pdfPage;
             } catch (Exception e) {
                 Log.e(Tag, e.getMessage(), e);
-                e.printStackTrace();
 //                if ((e.getClass()).equals(PDFAuthenticationFailureException.class)) {
 //                    //todo:输入密码
 //                }
+                result.error = e;
                 cancel(true);
             }
-            return mPDFPage;
+            return result;
         }
 
         @Override
-        protected  void onPostExecute(PDFPages PDFFile) {
-            if (PDFFile != null)
-                setPdfView();
+        protected void onPostExecute(LoadPDFAsyncTaskResult result) {
+            mPDFPage = result.data;
+            setPdfView();
         }
 
         @Override
-        protected void onCancelled(){
-            Toast.makeText(PdfViewActivity.this, "PDF加载失败", Toast.LENGTH_SHORT).show();
+        protected void onCancelled(LoadPDFAsyncTaskResult result) {
+            if (result.error != null)
+                Toast.makeText(PdfViewActivity.this, result.error.getMessage(), Toast.LENGTH_SHORT).show();
         }
     }
 }
