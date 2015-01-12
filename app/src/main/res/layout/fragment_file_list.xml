@@ -2,12 +2,26 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.zizo.fx.documentviewer.FileListActivity$PlaceholderFragment"
-    android:id="@+id/pf">
-
-    <ListView
+    android:id="@+id/pf"    >
+    <!--<FrameLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true">-->
+        <!--<TextView-->
+            <!--android:id="@+id/emptyText"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:text="@string/no_data"-->
+            <!--android:textSize="30sp"-->
+            <!--android:textColor="?android:attr/textColorSecondary"-->
+            <!--android:lineSpacingMultiplier="0.92" />-->
+    <!--</FrameLayout>-->
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/file_list"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        ptr:ptrAnimationStyle="flip"/>
 </RelativeLayout>

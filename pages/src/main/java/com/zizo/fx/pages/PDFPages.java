@@ -130,7 +130,7 @@ public class PDFPages{
 
             float width = pdfPage.getWidth();
             float height = pdfPage.getHeight();
-            float useZoom = getZoom(zoom);
+            float useZoom = 3;//getZoom(zoom);
 
             return pdfPage.getImage((int) (width * useZoom), (int) (height * useZoom), null, true, true);
         } catch (Throwable e) {

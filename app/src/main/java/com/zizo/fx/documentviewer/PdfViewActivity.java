@@ -1,10 +1,14 @@
 package com.zizo.fx.documentviewer;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Environment;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
+import android.widget.FrameLayout;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.zizo.fx.pages.PDFPages;
@@ -27,6 +31,7 @@ public class PdfViewActivity extends Activity {
     public static final String mPdfPath = "";
     //pdf翻页对象
     private PDFViewPager mViewPager;
+
     //pdf文件数据
     private PDFPages mPDFPage;
 
@@ -59,7 +64,6 @@ public class PdfViewActivity extends Activity {
 
         setContentView(R.layout.activity_pdf_view);
         mViewPager = (PDFViewPager) findViewById(R.id.view_pager);
-
         //todo:setSeekBar();
 
         //恢复数据
@@ -188,7 +192,8 @@ public class PdfViewActivity extends Activity {
 
     private class LoadPDFAsyncTask extends AsyncTask<String, Void, LoadPDFAsyncTaskResult> {
 
-        private String Tag = "StoreHttpAsyncTask";
+        private String Tag = "LoadPDFAsyncTask";
+        private ProgressDialog progress;
 
         @Override
         protected LoadPDFAsyncTaskResult doInBackground(String... urls) {
@@ -211,13 +216,20 @@ public class PdfViewActivity extends Activity {
         }
 
         @Override
+        protected void onPreExecute(){
+            progress = ProgressDialog.show(PdfViewActivity.this,"PDF加载中","PDF正努力加载中...");
+        }
+
+        @Override
         protected void onPostExecute(LoadPDFAsyncTaskResult result) {
             mPDFPage = result.data;
+            progress.dismiss();
             setPdfView();
         }
 
         @Override
         protected void onCancelled(LoadPDFAsyncTaskResult result) {
+            progress.dismiss();
             if (result.error != null)
                 Toast.makeText(PdfViewActivity.this, result.error.getMessage(), Toast.LENGTH_SHORT).show();
         }

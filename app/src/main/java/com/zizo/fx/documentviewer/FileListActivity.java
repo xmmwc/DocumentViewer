@@ -3,9 +3,11 @@ package com.zizo.fx.documentviewer;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.support.v7.app.ActionBarActivity;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+import android.text.format.DateUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -18,6 +20,9 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.handmark.pulltorefresh.library.PullToRefreshBase;
+import com.handmark.pulltorefresh.library.PullToRefreshListView;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -41,11 +46,15 @@ import java.util.List;
 public class FileListActivity extends ActionBarActivity {
 
     final static String Tag = "FileList";
+    public static ActionBar actionBar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_file_list);
+
+        actionBar = getSupportActionBar();
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
@@ -56,24 +65,15 @@ public class FileListActivity extends ActionBarActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_file_list, menu);
         return true;
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
+    public boolean onSupportNavigateUp() {
+        //This method is called when the up button is pressed. Just the pop back stack.
+        getSupportFragmentManager().popBackStack();
+        return true;
     }
 
 
@@ -83,9 +83,11 @@ public class FileListActivity extends ActionBarActivity {
         private String DownloadPath = Host + "/API/File";
 
         private View rootView;
-        private ListView listView;
+        private PullToRefreshListView listView;
         private FileListAdapter fileListAdapter;
         public List<FileItem> mFileItems;
+
+        private long mLastUpdateTime;
 
         private List<FileItem> getFileItems(JSONArray data) {
             List<FileItem> fileItems = new ArrayList<>();
@@ -109,6 +111,7 @@ public class FileListActivity extends ActionBarActivity {
 
             Bundle bundle = new Bundle();
             bundle.putString("nextPath", "/" + fileItem.FilePath);
+            bundle.putString("nextTitle", fileItem.Name);
             nextFrag.setArguments(bundle);
 
             this.getFragmentManager().beginTransaction()
@@ -142,10 +145,25 @@ public class FileListActivity extends ActionBarActivity {
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    FileItem selectedItem = listItems.get(position);
+                    FileItem selectedItem = (FileItem)parent.getItemAtPosition(position);//listItems.get(position - 1);
                     doClick(selectedItem);
                 }
             });
+        }
+
+        private void setMenuTitle(){
+            Bundle bundle = this.getArguments();
+            String title;
+            try {
+                title = bundle.getString("nextTitle");
+                actionBar.setDisplayHomeAsUpEnabled(true);
+                actionBar.setDisplayShowHomeEnabled(true);
+                actionBar.setTitle(title);
+            } catch (Exception e) {
+                actionBar.setDisplayHomeAsUpEnabled(false);
+                actionBar.setDisplayShowHomeEnabled(false);
+                actionBar.setTitle(R.string.title_activity_file_list);
+            }
         }
 
         private void getFileList(boolean forceRefresh) {
@@ -164,13 +182,48 @@ public class FileListActivity extends ActionBarActivity {
             }
         }
 
+        private String culLeftTime(long leftTime) {
+            if (leftTime <= 1000)
+                return "刚刚";
+            if (leftTime <= 60000)
+                return (int) leftTime / 1000 + "秒前";
+            if (leftTime <= 3600000)
+                return (int) leftTime / 60000 + "分钟前";
+
+            return "很久以前";
+        }
+
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             setRetainInstance(true);
             rootView = inflater.inflate(R.layout.fragment_file_list, container, false);
-            listView = (ListView) rootView.findViewById(R.id.file_list);
+            listView = (PullToRefreshListView) rootView.findViewById(R.id.file_list);
+            listView.setOnPullEventListener(new PullToRefreshBase.OnPullEventListener<ListView>() {
+                @Override
+                public void onPullEvent(PullToRefreshBase<ListView> refreshView, PullToRefreshBase.State state, PullToRefreshBase.Mode direction) {
+                    if (state.equals(PullToRefreshBase.State.PULL_TO_REFRESH)) {
+                        refreshView.getLoadingLayoutProxy().setPullLabel(getString(R.string.pull_to_refresh));
+                        refreshView.getLoadingLayoutProxy().setReleaseLabel(getString(R.string.release_to_refresh));
+                        refreshView.getLoadingLayoutProxy().setRefreshingLabel(getString(R.string.loading));
 
+                        long now  = System.currentTimeMillis();
+                        long leftTime = now - mLastUpdateTime;
+
+                        String label = culLeftTime(leftTime);
+                        // Update the LastUpdatedLabel
+                        refreshView.getLoadingLayoutProxy().setLastUpdatedLabel(
+                                getString(R.string.updated) + " : " + label);
+                    }
+                }
+            });
+            listView.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener<ListView>() {
+                @Override
+                public void onRefresh(PullToRefreshBase<ListView> refreshView) {
+                    getFileList(true);
+                }
+            });
+            setMenuTitle();
             getFileList(false);
 
             return rootView;
@@ -178,12 +231,12 @@ public class FileListActivity extends ActionBarActivity {
 
         private class FileListAdapter extends ArrayAdapter<FileItem> {
             private final Activity mContext;
-            private final List<FileItem> mFileItems;
+            private List<FileItem> mAdapterFileItems;
 
             public FileListAdapter(Activity context, List<FileItem> fileItems) {
                 super(context, R.layout.file_list_item, fileItems);
                 mContext = context;
-                mFileItems = fileItems;
+                mAdapterFileItems = fileItems;
             }
 
             @Override
@@ -193,7 +246,7 @@ public class FileListActivity extends ActionBarActivity {
                 ImageView img = (ImageView) itemView.findViewById(R.id.item_img);
                 TextView title = (TextView) itemView.findViewById(R.id.item_title);
 
-                FileItem item = mFileItems.get(position);
+                FileItem item = mAdapterFileItems.get(position);
 
                 img.setImageResource(getImageId(item.FileType));
                 title.setText(item.Name);
@@ -263,6 +316,14 @@ public class FileListActivity extends ActionBarActivity {
             protected void onPostExecute(FileListTaskResult result) {
                 mFileItems = getFileItems(result.data);
                 setListView(mFileItems);
+                listView.onRefreshComplete();
+                mLastUpdateTime = System.currentTimeMillis();
+//                if(fileListAdapter==null){
+//                    setListView(mFileItems);
+//                }else{
+//                    fileListAdapter.notifyDataSetChanged();
+//                    listView.onRefreshComplete();
+//                }
             }
 
             @Override

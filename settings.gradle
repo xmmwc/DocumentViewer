@@ -1,1 +1,2 @@
 include ':app', ':pages', ':photoview'
+include ':pulltorefresh'

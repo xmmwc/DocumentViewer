@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/pages" />
             <option value="$PROJECT_DIR$/photoview" />
+            <option value="$PROJECT_DIR$/pulltorefresh" />
           </set>
         </option>
       </GradleProjectSettings>
