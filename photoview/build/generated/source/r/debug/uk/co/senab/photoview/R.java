@@ -1133,117 +1133,117 @@ containing a value of this type.
         public static int windowFixedWidthMinor=0x7f01004d;
     }
     public static final class bool {
-        public static int abc_action_bar_embed_tabs=0x7f050000;
-        public static int abc_action_bar_embed_tabs_pre_jb=0x7f050001;
-        public static int abc_action_bar_expanded_action_views_exclusive=0x7f050002;
-        public static int abc_config_actionMenuItemAllCaps=0x7f050003;
-        public static int abc_config_allowActionMenuItemTextWithIcon=0x7f050004;
-        public static int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f050005;
+        public static int abc_action_bar_embed_tabs=0x7f060002;
+        public static int abc_action_bar_embed_tabs_pre_jb=0x7f060000;
+        public static int abc_action_bar_expanded_action_views_exclusive=0x7f060003;
+        public static int abc_config_actionMenuItemAllCaps=0x7f060004;
+        public static int abc_config_allowActionMenuItemTextWithIcon=0x7f060001;
+        public static int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f060005;
     }
     public static final class color {
-        public static int abc_background_cache_hint_selector_material_dark=0x7f060031;
-        public static int abc_background_cache_hint_selector_material_light=0x7f060032;
-        public static int abc_input_method_navigation_guard=0x7f060000;
-        public static int abc_primary_text_disable_only_material_dark=0x7f060033;
-        public static int abc_primary_text_disable_only_material_light=0x7f060034;
-        public static int abc_primary_text_material_dark=0x7f060035;
-        public static int abc_primary_text_material_light=0x7f060036;
-        public static int abc_search_url_text=0x7f060037;
-        public static int abc_search_url_text_normal=0x7f060001;
-        public static int abc_search_url_text_pressed=0x7f060002;
-        public static int abc_search_url_text_selected=0x7f060003;
-        public static int abc_secondary_text_material_dark=0x7f060038;
-        public static int abc_secondary_text_material_light=0x7f060039;
-        public static int accent_material_dark=0x7f060004;
-        public static int accent_material_light=0x7f060005;
-        public static int background_floating_material_dark=0x7f060006;
-        public static int background_floating_material_light=0x7f060007;
-        public static int background_material_dark=0x7f060008;
-        public static int background_material_light=0x7f060009;
-        public static int bright_foreground_disabled_material_dark=0x7f06000a;
-        public static int bright_foreground_disabled_material_light=0x7f06000b;
-        public static int bright_foreground_inverse_material_dark=0x7f06000c;
-        public static int bright_foreground_inverse_material_light=0x7f06000d;
-        public static int bright_foreground_material_dark=0x7f06000e;
-        public static int bright_foreground_material_light=0x7f06000f;
-        public static int button_material_dark=0x7f060010;
-        public static int button_material_light=0x7f060011;
-        public static int dim_foreground_disabled_material_dark=0x7f060012;
-        public static int dim_foreground_disabled_material_light=0x7f060013;
-        public static int dim_foreground_material_dark=0x7f060014;
-        public static int dim_foreground_material_light=0x7f060015;
-        public static int highlighted_text_material_dark=0x7f060016;
-        public static int highlighted_text_material_light=0x7f060017;
-        public static int hint_foreground_material_dark=0x7f060018;
-        public static int hint_foreground_material_light=0x7f060019;
-        public static int link_text_material_dark=0x7f06001a;
-        public static int link_text_material_light=0x7f06001b;
-        public static int material_blue_grey_800=0x7f06001c;
-        public static int material_blue_grey_900=0x7f06001d;
-        public static int material_blue_grey_950=0x7f06001e;
-        public static int material_deep_teal_200=0x7f06001f;
-        public static int material_deep_teal_500=0x7f060020;
-        public static int primary_dark_material_dark=0x7f060021;
-        public static int primary_dark_material_light=0x7f060022;
-        public static int primary_material_dark=0x7f060023;
-        public static int primary_material_light=0x7f060024;
-        public static int primary_text_default_material_dark=0x7f060025;
-        public static int primary_text_default_material_light=0x7f060026;
-        public static int primary_text_disabled_material_dark=0x7f060027;
-        public static int primary_text_disabled_material_light=0x7f060028;
-        public static int ripple_material_dark=0x7f060029;
-        public static int ripple_material_light=0x7f06002a;
-        public static int secondary_text_default_material_dark=0x7f06002b;
-        public static int secondary_text_default_material_light=0x7f06002c;
-        public static int secondary_text_disabled_material_dark=0x7f06002d;
-        public static int secondary_text_disabled_material_light=0x7f06002e;
-        public static int switch_thumb_normal_material_dark=0x7f06002f;
-        public static int switch_thumb_normal_material_light=0x7f060030;
+        public static int abc_background_cache_hint_selector_material_dark=0x7f0a0031;
+        public static int abc_background_cache_hint_selector_material_light=0x7f0a0032;
+        public static int abc_input_method_navigation_guard=0x7f0a0000;
+        public static int abc_primary_text_disable_only_material_dark=0x7f0a0033;
+        public static int abc_primary_text_disable_only_material_light=0x7f0a0034;
+        public static int abc_primary_text_material_dark=0x7f0a0035;
+        public static int abc_primary_text_material_light=0x7f0a0036;
+        public static int abc_search_url_text=0x7f0a0037;
+        public static int abc_search_url_text_normal=0x7f0a0001;
+        public static int abc_search_url_text_pressed=0x7f0a0002;
+        public static int abc_search_url_text_selected=0x7f0a0003;
+        public static int abc_secondary_text_material_dark=0x7f0a0038;
+        public static int abc_secondary_text_material_light=0x7f0a0039;
+        public static int accent_material_dark=0x7f0a0004;
+        public static int accent_material_light=0x7f0a0005;
+        public static int background_floating_material_dark=0x7f0a0006;
+        public static int background_floating_material_light=0x7f0a0007;
+        public static int background_material_dark=0x7f0a0008;
+        public static int background_material_light=0x7f0a0009;
+        public static int bright_foreground_disabled_material_dark=0x7f0a000a;
+        public static int bright_foreground_disabled_material_light=0x7f0a000b;
+        public static int bright_foreground_inverse_material_dark=0x7f0a000c;
+        public static int bright_foreground_inverse_material_light=0x7f0a000d;
+        public static int bright_foreground_material_dark=0x7f0a000e;
+        public static int bright_foreground_material_light=0x7f0a000f;
+        public static int button_material_dark=0x7f0a0010;
+        public static int button_material_light=0x7f0a0011;
+        public static int dim_foreground_disabled_material_dark=0x7f0a0012;
+        public static int dim_foreground_disabled_material_light=0x7f0a0013;
+        public static int dim_foreground_material_dark=0x7f0a0014;
+        public static int dim_foreground_material_light=0x7f0a0015;
+        public static int highlighted_text_material_dark=0x7f0a0016;
+        public static int highlighted_text_material_light=0x7f0a0017;
+        public static int hint_foreground_material_dark=0x7f0a0018;
+        public static int hint_foreground_material_light=0x7f0a0019;
+        public static int link_text_material_dark=0x7f0a001a;
+        public static int link_text_material_light=0x7f0a001b;
+        public static int material_blue_grey_800=0x7f0a001c;
+        public static int material_blue_grey_900=0x7f0a001d;
+        public static int material_blue_grey_950=0x7f0a001e;
+        public static int material_deep_teal_200=0x7f0a001f;
+        public static int material_deep_teal_500=0x7f0a0020;
+        public static int primary_dark_material_dark=0x7f0a0021;
+        public static int primary_dark_material_light=0x7f0a0022;
+        public static int primary_material_dark=0x7f0a0023;
+        public static int primary_material_light=0x7f0a0024;
+        public static int primary_text_default_material_dark=0x7f0a0025;
+        public static int primary_text_default_material_light=0x7f0a0026;
+        public static int primary_text_disabled_material_dark=0x7f0a0027;
+        public static int primary_text_disabled_material_light=0x7f0a0028;
+        public static int ripple_material_dark=0x7f0a0029;
+        public static int ripple_material_light=0x7f0a002a;
+        public static int secondary_text_default_material_dark=0x7f0a002b;
+        public static int secondary_text_default_material_light=0x7f0a002c;
+        public static int secondary_text_disabled_material_dark=0x7f0a002d;
+        public static int secondary_text_disabled_material_light=0x7f0a002e;
+        public static int switch_thumb_normal_material_dark=0x7f0a002f;
+        public static int switch_thumb_normal_material_light=0x7f0a0030;
     }
     public static final class dimen {
-        public static int abc_action_bar_default_height_material=0x7f080000;
-        public static int abc_action_bar_default_padding_material=0x7f080001;
-        public static int abc_action_bar_icon_vertical_padding_material=0x7f080002;
-        public static int abc_action_bar_progress_bar_size=0x7f080003;
-        public static int abc_action_bar_stacked_max_height=0x7f080004;
-        public static int abc_action_bar_stacked_tab_max_width=0x7f080005;
-        public static int abc_action_bar_subtitle_bottom_margin_material=0x7f080006;
-        public static int abc_action_bar_subtitle_top_margin_material=0x7f080007;
-        public static int abc_action_button_min_height_material=0x7f080008;
-        public static int abc_action_button_min_width_material=0x7f080009;
-        public static int abc_action_button_min_width_overflow_material=0x7f08000a;
-        public static int abc_config_prefDialogWidth=0x7f08000b;
-        public static int abc_control_inset_material=0x7f08000c;
-        public static int abc_control_padding_material=0x7f08000d;
-        public static int abc_dropdownitem_icon_width=0x7f08000e;
-        public static int abc_dropdownitem_text_padding_left=0x7f08000f;
-        public static int abc_dropdownitem_text_padding_right=0x7f080010;
-        public static int abc_panel_menu_list_width=0x7f080011;
-        public static int abc_search_view_preferred_width=0x7f080012;
-        public static int abc_search_view_text_min_width=0x7f080013;
-        public static int abc_text_size_body_1_material=0x7f080014;
-        public static int abc_text_size_body_2_material=0x7f080015;
-        public static int abc_text_size_button_material=0x7f080016;
-        public static int abc_text_size_caption_material=0x7f080017;
-        public static int abc_text_size_display_1_material=0x7f080018;
-        public static int abc_text_size_display_2_material=0x7f080019;
-        public static int abc_text_size_display_3_material=0x7f08001a;
-        public static int abc_text_size_display_4_material=0x7f08001b;
-        public static int abc_text_size_headline_material=0x7f08001c;
-        public static int abc_text_size_large_material=0x7f08001d;
-        public static int abc_text_size_medium_material=0x7f08001e;
-        public static int abc_text_size_menu_material=0x7f08001f;
-        public static int abc_text_size_small_material=0x7f080020;
-        public static int abc_text_size_subhead_material=0x7f080021;
-        public static int abc_text_size_subtitle_material_toolbar=0x7f080022;
-        public static int abc_text_size_title_material=0x7f080023;
-        public static int abc_text_size_title_material_toolbar=0x7f080024;
-        public static int dialog_fixed_height_major=0x7f080025;
-        public static int dialog_fixed_height_minor=0x7f080026;
-        public static int dialog_fixed_width_major=0x7f080027;
-        public static int dialog_fixed_width_minor=0x7f080028;
-        public static int disabled_alpha_material_dark=0x7f080029;
-        public static int disabled_alpha_material_light=0x7f08002a;
+        public static int abc_action_bar_default_height_material=0x7f070000;
+        public static int abc_action_bar_default_padding_material=0x7f070001;
+        public static int abc_action_bar_icon_vertical_padding_material=0x7f07000b;
+        public static int abc_action_bar_progress_bar_size=0x7f070002;
+        public static int abc_action_bar_stacked_max_height=0x7f07000c;
+        public static int abc_action_bar_stacked_tab_max_width=0x7f07000d;
+        public static int abc_action_bar_subtitle_bottom_margin_material=0x7f07000e;
+        public static int abc_action_bar_subtitle_top_margin_material=0x7f07000f;
+        public static int abc_action_button_min_height_material=0x7f070010;
+        public static int abc_action_button_min_width_material=0x7f070011;
+        public static int abc_action_button_min_width_overflow_material=0x7f070012;
+        public static int abc_config_prefDialogWidth=0x7f070005;
+        public static int abc_control_inset_material=0x7f070013;
+        public static int abc_control_padding_material=0x7f070014;
+        public static int abc_dropdownitem_icon_width=0x7f070015;
+        public static int abc_dropdownitem_text_padding_left=0x7f070016;
+        public static int abc_dropdownitem_text_padding_right=0x7f070017;
+        public static int abc_panel_menu_list_width=0x7f070018;
+        public static int abc_search_view_preferred_width=0x7f070019;
+        public static int abc_search_view_text_min_width=0x7f070006;
+        public static int abc_text_size_body_1_material=0x7f07001a;
+        public static int abc_text_size_body_2_material=0x7f07001b;
+        public static int abc_text_size_button_material=0x7f07001c;
+        public static int abc_text_size_caption_material=0x7f07001d;
+        public static int abc_text_size_display_1_material=0x7f07001e;
+        public static int abc_text_size_display_2_material=0x7f07001f;
+        public static int abc_text_size_display_3_material=0x7f070020;
+        public static int abc_text_size_display_4_material=0x7f070021;
+        public static int abc_text_size_headline_material=0x7f070022;
+        public static int abc_text_size_large_material=0x7f070023;
+        public static int abc_text_size_medium_material=0x7f070024;
+        public static int abc_text_size_menu_material=0x7f070025;
+        public static int abc_text_size_small_material=0x7f070026;
+        public static int abc_text_size_subhead_material=0x7f070027;
+        public static int abc_text_size_subtitle_material_toolbar=0x7f070003;
+        public static int abc_text_size_title_material=0x7f070028;
+        public static int abc_text_size_title_material_toolbar=0x7f070004;
+        public static int dialog_fixed_height_major=0x7f070007;
+        public static int dialog_fixed_height_minor=0x7f070008;
+        public static int dialog_fixed_width_major=0x7f070009;
+        public static int dialog_fixed_width_minor=0x7f07000a;
+        public static int disabled_alpha_material_dark=0x7f070029;
+        public static int disabled_alpha_material_light=0x7f07002a;
     }
     public static final class drawable {
         public static int abc_ab_share_pack_holo_dark=0x7f020000;
@@ -1299,72 +1299,72 @@ containing a value of this type.
         public static int abc_textfield_search_material=0x7f020032;
     }
     public static final class id {
-        public static int action_bar=0x7f070031;
-        public static int action_bar_activity_content=0x7f070015;
-        public static int action_bar_container=0x7f070030;
-        public static int action_bar_root=0x7f07002c;
-        public static int action_bar_spinner=0x7f070016;
-        public static int action_bar_subtitle=0x7f07001f;
-        public static int action_bar_title=0x7f07001e;
-        public static int action_context_bar=0x7f070032;
-        public static int action_menu_divider=0x7f070017;
-        public static int action_menu_presenter=0x7f070018;
-        public static int action_mode_bar=0x7f07002e;
-        public static int action_mode_bar_stub=0x7f07002d;
-        public static int action_mode_close_button=0x7f070020;
-        public static int activity_chooser_view_content=0x7f070021;
-        public static int always=0x7f07000f;
-        public static int beginning=0x7f07000a;
-        public static int checkbox=0x7f070029;
-        public static int collapseActionView=0x7f070011;
-        public static int decor_content_parent=0x7f07002f;
-        public static int default_activity_button=0x7f070024;
-        public static int dialog=0x7f070012;
-        public static int disableHome=0x7f070009;
-        public static int dropdown=0x7f070013;
-        public static int edit_query=0x7f070033;
-        public static int end=0x7f07000c;
-        public static int expand_activities_button=0x7f070022;
-        public static int expanded_menu=0x7f070028;
-        public static int home=0x7f070019;
-        public static int homeAsUp=0x7f070006;
-        public static int icon=0x7f070026;
-        public static int ifRoom=0x7f07000e;
-        public static int image=0x7f070023;
-        public static int listMode=0x7f070001;
-        public static int list_item=0x7f070025;
-        public static int middle=0x7f07000b;
-        public static int never=0x7f07000d;
-        public static int none=0x7f070003;
-        public static int normal=0x7f070000;
-        public static int progress_circular=0x7f07001a;
-        public static int progress_horizontal=0x7f07001b;
-        public static int radio=0x7f07002b;
-        public static int search_badge=0x7f070035;
-        public static int search_bar=0x7f070034;
-        public static int search_button=0x7f070036;
-        public static int search_close_btn=0x7f07003b;
-        public static int search_edit_frame=0x7f070037;
-        public static int search_go_btn=0x7f07003d;
-        public static int search_mag_icon=0x7f070038;
-        public static int search_plate=0x7f070039;
-        public static int search_src_text=0x7f07003a;
-        public static int search_voice_btn=0x7f07003e;
-        public static int shortcut=0x7f07002a;
-        public static int showCustom=0x7f070008;
-        public static int showHome=0x7f070005;
-        public static int showTitle=0x7f070007;
-        public static int split_action_bar=0x7f07001c;
-        public static int submit_area=0x7f07003c;
-        public static int tabMode=0x7f070002;
-        public static int title=0x7f070027;
-        public static int up=0x7f07001d;
-        public static int useLogo=0x7f070004;
-        public static int withText=0x7f070010;
-        public static int wrap_content=0x7f070014;
+        public static int action_bar=0x7f0b0031;
+        public static int action_bar_activity_content=0x7f0b0000;
+        public static int action_bar_container=0x7f0b0030;
+        public static int action_bar_root=0x7f0b002c;
+        public static int action_bar_spinner=0x7f0b0001;
+        public static int action_bar_subtitle=0x7f0b001f;
+        public static int action_bar_title=0x7f0b001e;
+        public static int action_context_bar=0x7f0b0032;
+        public static int action_menu_divider=0x7f0b0002;
+        public static int action_menu_presenter=0x7f0b0003;
+        public static int action_mode_bar=0x7f0b002e;
+        public static int action_mode_bar_stub=0x7f0b002d;
+        public static int action_mode_close_button=0x7f0b0020;
+        public static int activity_chooser_view_content=0x7f0b0021;
+        public static int always=0x7f0b0016;
+        public static int beginning=0x7f0b0013;
+        public static int checkbox=0x7f0b0029;
+        public static int collapseActionView=0x7f0b0017;
+        public static int decor_content_parent=0x7f0b002f;
+        public static int default_activity_button=0x7f0b0024;
+        public static int dialog=0x7f0b001b;
+        public static int disableHome=0x7f0b000c;
+        public static int dropdown=0x7f0b001c;
+        public static int edit_query=0x7f0b0033;
+        public static int end=0x7f0b0014;
+        public static int expand_activities_button=0x7f0b0022;
+        public static int expanded_menu=0x7f0b0028;
+        public static int home=0x7f0b0004;
+        public static int homeAsUp=0x7f0b000d;
+        public static int icon=0x7f0b0026;
+        public static int ifRoom=0x7f0b0018;
+        public static int image=0x7f0b0023;
+        public static int listMode=0x7f0b0009;
+        public static int list_item=0x7f0b0025;
+        public static int middle=0x7f0b0015;
+        public static int never=0x7f0b0019;
+        public static int none=0x7f0b000e;
+        public static int normal=0x7f0b000a;
+        public static int progress_circular=0x7f0b0005;
+        public static int progress_horizontal=0x7f0b0006;
+        public static int radio=0x7f0b002b;
+        public static int search_badge=0x7f0b0035;
+        public static int search_bar=0x7f0b0034;
+        public static int search_button=0x7f0b0036;
+        public static int search_close_btn=0x7f0b003b;
+        public static int search_edit_frame=0x7f0b0037;
+        public static int search_go_btn=0x7f0b003d;
+        public static int search_mag_icon=0x7f0b0038;
+        public static int search_plate=0x7f0b0039;
+        public static int search_src_text=0x7f0b003a;
+        public static int search_voice_btn=0x7f0b003e;
+        public static int shortcut=0x7f0b002a;
+        public static int showCustom=0x7f0b000f;
+        public static int showHome=0x7f0b0010;
+        public static int showTitle=0x7f0b0011;
+        public static int split_action_bar=0x7f0b0007;
+        public static int submit_area=0x7f0b003c;
+        public static int tabMode=0x7f0b000b;
+        public static int title=0x7f0b0027;
+        public static int up=0x7f0b0008;
+        public static int useLogo=0x7f0b0012;
+        public static int withText=0x7f0b001a;
+        public static int wrap_content=0x7f0b001d;
     }
     public static final class integer {
-        public static int abc_max_action_buttons=0x7f090000;
+        public static int abc_max_action_buttons=0x7f080000;
     }
     public static final class layout {
         public static int abc_action_bar_title_item=0x7f030000;
@@ -1393,259 +1393,259 @@ containing a value of this type.
         public static int support_simple_spinner_dropdown_item=0x7f030017;
     }
     public static final class string {
-        public static int abc_action_bar_home_description=0x7f0a0000;
-        public static int abc_action_bar_home_description_format=0x7f0a0001;
-        public static int abc_action_bar_home_subtitle_description_format=0x7f0a0002;
-        public static int abc_action_bar_up_description=0x7f0a0003;
-        public static int abc_action_menu_overflow_description=0x7f0a0004;
-        public static int abc_action_mode_done=0x7f0a0005;
-        public static int abc_activity_chooser_view_see_all=0x7f0a0006;
-        public static int abc_activitychooserview_choose_application=0x7f0a0007;
-        public static int abc_searchview_description_clear=0x7f0a0008;
-        public static int abc_searchview_description_query=0x7f0a0009;
-        public static int abc_searchview_description_search=0x7f0a000a;
-        public static int abc_searchview_description_submit=0x7f0a000b;
-        public static int abc_searchview_description_voice=0x7f0a000c;
-        public static int abc_shareactionprovider_share_with=0x7f0a000d;
-        public static int abc_shareactionprovider_share_with_application=0x7f0a000e;
-        public static int abc_toolbar_collapse_description=0x7f0a000f;
+        public static int abc_action_bar_home_description=0x7f050000;
+        public static int abc_action_bar_home_description_format=0x7f050001;
+        public static int abc_action_bar_home_subtitle_description_format=0x7f050002;
+        public static int abc_action_bar_up_description=0x7f050003;
+        public static int abc_action_menu_overflow_description=0x7f050004;
+        public static int abc_action_mode_done=0x7f050005;
+        public static int abc_activity_chooser_view_see_all=0x7f050006;
+        public static int abc_activitychooserview_choose_application=0x7f050007;
+        public static int abc_searchview_description_clear=0x7f050008;
+        public static int abc_searchview_description_query=0x7f050009;
+        public static int abc_searchview_description_search=0x7f05000a;
+        public static int abc_searchview_description_submit=0x7f05000b;
+        public static int abc_searchview_description_voice=0x7f05000c;
+        public static int abc_shareactionprovider_share_with=0x7f05000d;
+        public static int abc_shareactionprovider_share_with_application=0x7f05000e;
+        public static int abc_toolbar_collapse_description=0x7f05000f;
     }
     public static final class style {
-        public static int Base_TextAppearance_AppCompat=0x7f0b0000;
-        public static int Base_TextAppearance_AppCompat_Body1=0x7f0b0001;
-        public static int Base_TextAppearance_AppCompat_Body2=0x7f0b0002;
-        public static int Base_TextAppearance_AppCompat_Button=0x7f0b0003;
-        public static int Base_TextAppearance_AppCompat_Caption=0x7f0b0004;
-        public static int Base_TextAppearance_AppCompat_Display1=0x7f0b0005;
-        public static int Base_TextAppearance_AppCompat_Display2=0x7f0b0006;
-        public static int Base_TextAppearance_AppCompat_Display3=0x7f0b0007;
-        public static int Base_TextAppearance_AppCompat_Display4=0x7f0b0008;
-        public static int Base_TextAppearance_AppCompat_Headline=0x7f0b0009;
-        public static int Base_TextAppearance_AppCompat_Inverse=0x7f0b000a;
-        public static int Base_TextAppearance_AppCompat_Large=0x7f0b000b;
-        public static int Base_TextAppearance_AppCompat_Large_Inverse=0x7f0b000c;
-        public static int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0b000d;
-        public static int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0b000e;
-        public static int Base_TextAppearance_AppCompat_Medium=0x7f0b000f;
-        public static int Base_TextAppearance_AppCompat_Medium_Inverse=0x7f0b0010;
-        public static int Base_TextAppearance_AppCompat_Menu=0x7f0b0011;
-        public static int Base_TextAppearance_AppCompat_SearchResult=0x7f0b0012;
-        public static int Base_TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0b0013;
-        public static int Base_TextAppearance_AppCompat_SearchResult_Title=0x7f0b0014;
-        public static int Base_TextAppearance_AppCompat_Small=0x7f0b0015;
-        public static int Base_TextAppearance_AppCompat_Small_Inverse=0x7f0b0016;
-        public static int Base_TextAppearance_AppCompat_Subhead=0x7f0b0017;
-        public static int Base_TextAppearance_AppCompat_Subhead_Inverse=0x7f0b0018;
-        public static int Base_TextAppearance_AppCompat_Title=0x7f0b0019;
-        public static int Base_TextAppearance_AppCompat_Title_Inverse=0x7f0b001a;
-        public static int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0b001b;
-        public static int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0b001c;
-        public static int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0b001d;
-        public static int Base_TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0b001e;
-        public static int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0b001f;
-        public static int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0b0020;
-        public static int Base_TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0b0021;
-        public static int Base_TextAppearance_AppCompat_Widget_DropDownItem=0x7f0b0022;
-        public static int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0b0023;
-        public static int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0b0024;
-        public static int Base_TextAppearance_AppCompat_Widget_Switch=0x7f0b0025;
-        public static int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0b0026;
-        public static int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0b0027;
-        public static int Base_TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0b0028;
-        public static int Base_Theme_AppCompat=0x7f0b0029;
-        public static int Base_Theme_AppCompat_CompactMenu=0x7f0b002a;
-        public static int Base_Theme_AppCompat_Dialog=0x7f0b002b;
-        public static int Base_Theme_AppCompat_Dialog_FixedSize=0x7f0b002c;
-        public static int Base_Theme_AppCompat_DialogWhenLarge=0x7f0b002d;
-        public static int Base_Theme_AppCompat_Light=0x7f0b002e;
-        public static int Base_Theme_AppCompat_Light_DarkActionBar=0x7f0b002f;
-        public static int Base_Theme_AppCompat_Light_Dialog=0x7f0b0030;
-        public static int Base_Theme_AppCompat_Light_Dialog_FixedSize=0x7f0b0031;
-        public static int Base_Theme_AppCompat_Light_DialogWhenLarge=0x7f0b0032;
-        public static int Base_ThemeOverlay_AppCompat=0x7f0b0033;
-        public static int Base_ThemeOverlay_AppCompat_ActionBar=0x7f0b0034;
-        public static int Base_ThemeOverlay_AppCompat_Dark=0x7f0b0035;
-        public static int Base_ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0b0036;
-        public static int Base_ThemeOverlay_AppCompat_Light=0x7f0b0037;
-        public static int Base_V11_Theme_AppCompat=0x7f0b00df;
-        public static int Base_V11_Theme_AppCompat_Dialog=0x7f0b00e0;
-        public static int Base_V11_Theme_AppCompat_Light=0x7f0b00e1;
-        public static int Base_V11_Theme_AppCompat_Light_Dialog=0x7f0b00e2;
-        public static int Base_V14_Theme_AppCompat=0x7f0b00e3;
-        public static int Base_V14_Theme_AppCompat_Dialog=0x7f0b00e4;
-        public static int Base_V14_Theme_AppCompat_Light=0x7f0b00e5;
-        public static int Base_V14_Theme_AppCompat_Light_Dialog=0x7f0b00e6;
-        public static int Base_V21_Theme_AppCompat=0x7f0b00e7;
-        public static int Base_V21_Theme_AppCompat_Dialog=0x7f0b00e8;
-        public static int Base_V21_Theme_AppCompat_Light=0x7f0b00e9;
-        public static int Base_V21_Theme_AppCompat_Light_Dialog=0x7f0b00ea;
-        public static int Base_V7_Theme_AppCompat=0x7f0b0038;
-        public static int Base_V7_Theme_AppCompat_Dialog=0x7f0b0039;
-        public static int Base_V7_Theme_AppCompat_Light=0x7f0b003a;
-        public static int Base_Widget_AppCompat_ActionBar=0x7f0b003b;
-        public static int Base_Widget_AppCompat_ActionBar_Solid=0x7f0b003c;
-        public static int Base_Widget_AppCompat_ActionBar_TabBar=0x7f0b003d;
-        public static int Base_Widget_AppCompat_ActionBar_TabText=0x7f0b003e;
-        public static int Base_Widget_AppCompat_ActionBar_TabView=0x7f0b003f;
-        public static int Base_Widget_AppCompat_ActionButton=0x7f0b0040;
-        public static int Base_Widget_AppCompat_ActionButton_CloseMode=0x7f0b0041;
-        public static int Base_Widget_AppCompat_ActionButton_Overflow=0x7f0b0042;
-        public static int Base_Widget_AppCompat_ActionMode=0x7f0b0043;
-        public static int Base_Widget_AppCompat_ActivityChooserView=0x7f0b0044;
-        public static int Base_Widget_AppCompat_AutoCompleteTextView=0x7f0b0045;
-        public static int Base_Widget_AppCompat_CompoundButton_Switch=0x7f0b0046;
-        public static int Base_Widget_AppCompat_DrawerArrowToggle=0x7f0b0047;
-        public static int Base_Widget_AppCompat_DropDownItem_Spinner=0x7f0b0048;
-        public static int Base_Widget_AppCompat_EditText=0x7f0b0049;
-        public static int Base_Widget_AppCompat_Light_ActionBar=0x7f0b004a;
-        public static int Base_Widget_AppCompat_Light_ActionBar_Solid=0x7f0b004b;
-        public static int Base_Widget_AppCompat_Light_ActionBar_TabBar=0x7f0b004c;
-        public static int Base_Widget_AppCompat_Light_ActionBar_TabText=0x7f0b004d;
-        public static int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0b004e;
-        public static int Base_Widget_AppCompat_Light_ActionBar_TabView=0x7f0b004f;
-        public static int Base_Widget_AppCompat_Light_ActivityChooserView=0x7f0b0050;
-        public static int Base_Widget_AppCompat_Light_AutoCompleteTextView=0x7f0b0051;
-        public static int Base_Widget_AppCompat_Light_PopupMenu=0x7f0b0052;
-        public static int Base_Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0b0053;
-        public static int Base_Widget_AppCompat_ListPopupWindow=0x7f0b0054;
-        public static int Base_Widget_AppCompat_ListView_DropDown=0x7f0b0055;
-        public static int Base_Widget_AppCompat_ListView_Menu=0x7f0b0056;
-        public static int Base_Widget_AppCompat_PopupMenu=0x7f0b0057;
-        public static int Base_Widget_AppCompat_PopupMenu_Overflow=0x7f0b0058;
-        public static int Base_Widget_AppCompat_PopupWindow=0x7f0b0059;
-        public static int Base_Widget_AppCompat_ProgressBar=0x7f0b005a;
-        public static int Base_Widget_AppCompat_ProgressBar_Horizontal=0x7f0b005b;
-        public static int Base_Widget_AppCompat_SearchView=0x7f0b005c;
-        public static int Base_Widget_AppCompat_Spinner=0x7f0b005d;
-        public static int Base_Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0b005e;
-        public static int Base_Widget_AppCompat_Toolbar=0x7f0b005f;
-        public static int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f0b0060;
-        public static int Platform_AppCompat=0x7f0b0061;
-        public static int Platform_AppCompat_Dialog=0x7f0b0062;
-        public static int Platform_AppCompat_Light=0x7f0b0063;
-        public static int Platform_AppCompat_Light_Dialog=0x7f0b0064;
-        public static int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem=0x7f0b0065;
-        public static int RtlOverlay_Widget_AppCompat_ActionButton_CloseMode=0x7f0b0066;
-        public static int RtlOverlay_Widget_AppCompat_ActionButton_Overflow=0x7f0b0067;
-        public static int RtlOverlay_Widget_AppCompat_PopupMenuItem=0x7f0b0068;
-        public static int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup=0x7f0b0069;
-        public static int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text=0x7f0b006a;
-        public static int RtlOverlay_Widget_AppCompat_Search_DropDown=0x7f0b006b;
-        public static int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1=0x7f0b006c;
-        public static int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2=0x7f0b006d;
-        public static int RtlOverlay_Widget_AppCompat_Search_DropDown_Query=0x7f0b006e;
-        public static int RtlOverlay_Widget_AppCompat_Search_DropDown_Text=0x7f0b006f;
-        public static int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f0b0070;
-        public static int TextAppearance_AppCompat=0x7f0b0071;
-        public static int TextAppearance_AppCompat_Body1=0x7f0b0072;
-        public static int TextAppearance_AppCompat_Body2=0x7f0b0073;
-        public static int TextAppearance_AppCompat_Button=0x7f0b0074;
-        public static int TextAppearance_AppCompat_Caption=0x7f0b0075;
-        public static int TextAppearance_AppCompat_Display1=0x7f0b0076;
-        public static int TextAppearance_AppCompat_Display2=0x7f0b0077;
-        public static int TextAppearance_AppCompat_Display3=0x7f0b0078;
-        public static int TextAppearance_AppCompat_Display4=0x7f0b0079;
-        public static int TextAppearance_AppCompat_Headline=0x7f0b007a;
-        public static int TextAppearance_AppCompat_Inverse=0x7f0b007b;
-        public static int TextAppearance_AppCompat_Large=0x7f0b007c;
-        public static int TextAppearance_AppCompat_Large_Inverse=0x7f0b007d;
-        public static int TextAppearance_AppCompat_Light_SearchResult_Subtitle=0x7f0b007e;
-        public static int TextAppearance_AppCompat_Light_SearchResult_Title=0x7f0b007f;
-        public static int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0b0080;
-        public static int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0b0081;
-        public static int TextAppearance_AppCompat_Medium=0x7f0b0082;
-        public static int TextAppearance_AppCompat_Medium_Inverse=0x7f0b0083;
-        public static int TextAppearance_AppCompat_Menu=0x7f0b0084;
-        public static int TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0b0085;
-        public static int TextAppearance_AppCompat_SearchResult_Title=0x7f0b0086;
-        public static int TextAppearance_AppCompat_Small=0x7f0b0087;
-        public static int TextAppearance_AppCompat_Small_Inverse=0x7f0b0088;
-        public static int TextAppearance_AppCompat_Subhead=0x7f0b0089;
-        public static int TextAppearance_AppCompat_Subhead_Inverse=0x7f0b008a;
-        public static int TextAppearance_AppCompat_Title=0x7f0b008b;
-        public static int TextAppearance_AppCompat_Title_Inverse=0x7f0b008c;
-        public static int TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0b008d;
-        public static int TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0b008e;
-        public static int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0b008f;
-        public static int TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0b0090;
-        public static int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0b0091;
-        public static int TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0b0092;
-        public static int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse=0x7f0b0093;
-        public static int TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0b0094;
-        public static int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse=0x7f0b0095;
-        public static int TextAppearance_AppCompat_Widget_DropDownItem=0x7f0b0096;
-        public static int TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0b0097;
-        public static int TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0b0098;
-        public static int TextAppearance_AppCompat_Widget_Switch=0x7f0b0099;
-        public static int TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0b009a;
-        public static int TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0b009b;
-        public static int TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0b009c;
-        public static int Theme_AppCompat=0x7f0b009d;
-        public static int Theme_AppCompat_CompactMenu=0x7f0b009e;
-        public static int Theme_AppCompat_Dialog=0x7f0b009f;
-        public static int Theme_AppCompat_DialogWhenLarge=0x7f0b00a0;
-        public static int Theme_AppCompat_Light=0x7f0b00a1;
-        public static int Theme_AppCompat_Light_DarkActionBar=0x7f0b00a2;
-        public static int Theme_AppCompat_Light_Dialog=0x7f0b00a3;
-        public static int Theme_AppCompat_Light_DialogWhenLarge=0x7f0b00a4;
-        public static int Theme_AppCompat_Light_NoActionBar=0x7f0b00a5;
-        public static int Theme_AppCompat_NoActionBar=0x7f0b00a6;
-        public static int ThemeOverlay_AppCompat=0x7f0b00a7;
-        public static int ThemeOverlay_AppCompat_ActionBar=0x7f0b00a8;
-        public static int ThemeOverlay_AppCompat_Dark=0x7f0b00a9;
-        public static int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0b00aa;
-        public static int ThemeOverlay_AppCompat_Light=0x7f0b00ab;
-        public static int Widget_AppCompat_ActionBar=0x7f0b00ac;
-        public static int Widget_AppCompat_ActionBar_Solid=0x7f0b00ad;
-        public static int Widget_AppCompat_ActionBar_TabBar=0x7f0b00ae;
-        public static int Widget_AppCompat_ActionBar_TabText=0x7f0b00af;
-        public static int Widget_AppCompat_ActionBar_TabView=0x7f0b00b0;
-        public static int Widget_AppCompat_ActionButton=0x7f0b00b1;
-        public static int Widget_AppCompat_ActionButton_CloseMode=0x7f0b00b2;
-        public static int Widget_AppCompat_ActionButton_Overflow=0x7f0b00b3;
-        public static int Widget_AppCompat_ActionMode=0x7f0b00b4;
-        public static int Widget_AppCompat_ActivityChooserView=0x7f0b00b5;
-        public static int Widget_AppCompat_AutoCompleteTextView=0x7f0b00b6;
-        public static int Widget_AppCompat_CompoundButton_Switch=0x7f0b00b7;
-        public static int Widget_AppCompat_DrawerArrowToggle=0x7f0b00b8;
-        public static int Widget_AppCompat_DropDownItem_Spinner=0x7f0b00b9;
-        public static int Widget_AppCompat_EditText=0x7f0b00ba;
-        public static int Widget_AppCompat_Light_ActionBar=0x7f0b00bb;
-        public static int Widget_AppCompat_Light_ActionBar_Solid=0x7f0b00bc;
-        public static int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f0b00bd;
-        public static int Widget_AppCompat_Light_ActionBar_TabBar=0x7f0b00be;
-        public static int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f0b00bf;
-        public static int Widget_AppCompat_Light_ActionBar_TabText=0x7f0b00c0;
-        public static int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0b00c1;
-        public static int Widget_AppCompat_Light_ActionBar_TabView=0x7f0b00c2;
-        public static int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f0b00c3;
-        public static int Widget_AppCompat_Light_ActionButton=0x7f0b00c4;
-        public static int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f0b00c5;
-        public static int Widget_AppCompat_Light_ActionButton_Overflow=0x7f0b00c6;
-        public static int Widget_AppCompat_Light_ActionMode_Inverse=0x7f0b00c7;
-        public static int Widget_AppCompat_Light_ActivityChooserView=0x7f0b00c8;
-        public static int Widget_AppCompat_Light_AutoCompleteTextView=0x7f0b00c9;
-        public static int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f0b00ca;
-        public static int Widget_AppCompat_Light_ListPopupWindow=0x7f0b00cb;
-        public static int Widget_AppCompat_Light_ListView_DropDown=0x7f0b00cc;
-        public static int Widget_AppCompat_Light_PopupMenu=0x7f0b00cd;
-        public static int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0b00ce;
-        public static int Widget_AppCompat_Light_SearchView=0x7f0b00cf;
-        public static int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f0b00d0;
-        public static int Widget_AppCompat_ListPopupWindow=0x7f0b00d1;
-        public static int Widget_AppCompat_ListView_DropDown=0x7f0b00d2;
-        public static int Widget_AppCompat_ListView_Menu=0x7f0b00d3;
-        public static int Widget_AppCompat_PopupMenu=0x7f0b00d4;
-        public static int Widget_AppCompat_PopupMenu_Overflow=0x7f0b00d5;
-        public static int Widget_AppCompat_PopupWindow=0x7f0b00d6;
-        public static int Widget_AppCompat_ProgressBar=0x7f0b00d7;
-        public static int Widget_AppCompat_ProgressBar_Horizontal=0x7f0b00d8;
-        public static int Widget_AppCompat_SearchView=0x7f0b00d9;
-        public static int Widget_AppCompat_Spinner=0x7f0b00da;
-        public static int Widget_AppCompat_Spinner_DropDown=0x7f0b00db;
-        public static int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0b00dc;
-        public static int Widget_AppCompat_Toolbar=0x7f0b00dd;
-        public static int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0b00de;
+        public static int Base_TextAppearance_AppCompat=0x7f090027;
+        public static int Base_TextAppearance_AppCompat_Body1=0x7f090028;
+        public static int Base_TextAppearance_AppCompat_Body2=0x7f090029;
+        public static int Base_TextAppearance_AppCompat_Button=0x7f09002a;
+        public static int Base_TextAppearance_AppCompat_Caption=0x7f09002b;
+        public static int Base_TextAppearance_AppCompat_Display1=0x7f09002c;
+        public static int Base_TextAppearance_AppCompat_Display2=0x7f09002d;
+        public static int Base_TextAppearance_AppCompat_Display3=0x7f09002e;
+        public static int Base_TextAppearance_AppCompat_Display4=0x7f09002f;
+        public static int Base_TextAppearance_AppCompat_Headline=0x7f090030;
+        public static int Base_TextAppearance_AppCompat_Inverse=0x7f090002;
+        public static int Base_TextAppearance_AppCompat_Large=0x7f090031;
+        public static int Base_TextAppearance_AppCompat_Large_Inverse=0x7f090003;
+        public static int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f090032;
+        public static int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f090033;
+        public static int Base_TextAppearance_AppCompat_Medium=0x7f090034;
+        public static int Base_TextAppearance_AppCompat_Medium_Inverse=0x7f090004;
+        public static int Base_TextAppearance_AppCompat_Menu=0x7f090035;
+        public static int Base_TextAppearance_AppCompat_SearchResult=0x7f090065;
+        public static int Base_TextAppearance_AppCompat_SearchResult_Subtitle=0x7f090036;
+        public static int Base_TextAppearance_AppCompat_SearchResult_Title=0x7f090037;
+        public static int Base_TextAppearance_AppCompat_Small=0x7f090038;
+        public static int Base_TextAppearance_AppCompat_Small_Inverse=0x7f090005;
+        public static int Base_TextAppearance_AppCompat_Subhead=0x7f090039;
+        public static int Base_TextAppearance_AppCompat_Subhead_Inverse=0x7f090006;
+        public static int Base_TextAppearance_AppCompat_Title=0x7f09003a;
+        public static int Base_TextAppearance_AppCompat_Title_Inverse=0x7f090007;
+        public static int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f09003b;
+        public static int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f09003c;
+        public static int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f09003d;
+        public static int Base_TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f09003e;
+        public static int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f09003f;
+        public static int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f090040;
+        public static int Base_TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f090041;
+        public static int Base_TextAppearance_AppCompat_Widget_DropDownItem=0x7f090066;
+        public static int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f090042;
+        public static int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f090043;
+        public static int Base_TextAppearance_AppCompat_Widget_Switch=0x7f090044;
+        public static int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f090067;
+        public static int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f090045;
+        public static int Base_TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f090046;
+        public static int Base_Theme_AppCompat=0x7f090008;
+        public static int Base_Theme_AppCompat_CompactMenu=0x7f090068;
+        public static int Base_Theme_AppCompat_Dialog=0x7f090009;
+        public static int Base_Theme_AppCompat_Dialog_FixedSize=0x7f090069;
+        public static int Base_Theme_AppCompat_DialogWhenLarge=0x7f090000;
+        public static int Base_Theme_AppCompat_Light=0x7f09000a;
+        public static int Base_Theme_AppCompat_Light_DarkActionBar=0x7f09006a;
+        public static int Base_Theme_AppCompat_Light_Dialog=0x7f09000b;
+        public static int Base_Theme_AppCompat_Light_Dialog_FixedSize=0x7f09006b;
+        public static int Base_Theme_AppCompat_Light_DialogWhenLarge=0x7f090001;
+        public static int Base_ThemeOverlay_AppCompat=0x7f090047;
+        public static int Base_ThemeOverlay_AppCompat_ActionBar=0x7f090048;
+        public static int Base_ThemeOverlay_AppCompat_Dark=0x7f090049;
+        public static int Base_ThemeOverlay_AppCompat_Dark_ActionBar=0x7f09004a;
+        public static int Base_ThemeOverlay_AppCompat_Light=0x7f09004b;
+        public static int Base_V11_Theme_AppCompat=0x7f09000c;
+        public static int Base_V11_Theme_AppCompat_Dialog=0x7f09000d;
+        public static int Base_V11_Theme_AppCompat_Light=0x7f09000e;
+        public static int Base_V11_Theme_AppCompat_Light_Dialog=0x7f09000f;
+        public static int Base_V14_Theme_AppCompat=0x7f090017;
+        public static int Base_V14_Theme_AppCompat_Dialog=0x7f090018;
+        public static int Base_V14_Theme_AppCompat_Light=0x7f090019;
+        public static int Base_V14_Theme_AppCompat_Light_Dialog=0x7f09001a;
+        public static int Base_V21_Theme_AppCompat=0x7f09004c;
+        public static int Base_V21_Theme_AppCompat_Dialog=0x7f09004d;
+        public static int Base_V21_Theme_AppCompat_Light=0x7f09004e;
+        public static int Base_V21_Theme_AppCompat_Light_Dialog=0x7f09004f;
+        public static int Base_V7_Theme_AppCompat=0x7f09006c;
+        public static int Base_V7_Theme_AppCompat_Dialog=0x7f09006d;
+        public static int Base_V7_Theme_AppCompat_Light=0x7f09006e;
+        public static int Base_Widget_AppCompat_ActionBar=0x7f09006f;
+        public static int Base_Widget_AppCompat_ActionBar_Solid=0x7f090070;
+        public static int Base_Widget_AppCompat_ActionBar_TabBar=0x7f090071;
+        public static int Base_Widget_AppCompat_ActionBar_TabText=0x7f090050;
+        public static int Base_Widget_AppCompat_ActionBar_TabView=0x7f090051;
+        public static int Base_Widget_AppCompat_ActionButton=0x7f090052;
+        public static int Base_Widget_AppCompat_ActionButton_CloseMode=0x7f090053;
+        public static int Base_Widget_AppCompat_ActionButton_Overflow=0x7f090054;
+        public static int Base_Widget_AppCompat_ActionMode=0x7f090072;
+        public static int Base_Widget_AppCompat_ActivityChooserView=0x7f090055;
+        public static int Base_Widget_AppCompat_AutoCompleteTextView=0x7f090056;
+        public static int Base_Widget_AppCompat_CompoundButton_Switch=0x7f090073;
+        public static int Base_Widget_AppCompat_DrawerArrowToggle=0x7f090074;
+        public static int Base_Widget_AppCompat_DropDownItem_Spinner=0x7f090057;
+        public static int Base_Widget_AppCompat_EditText=0x7f090075;
+        public static int Base_Widget_AppCompat_Light_ActionBar=0x7f090076;
+        public static int Base_Widget_AppCompat_Light_ActionBar_Solid=0x7f090077;
+        public static int Base_Widget_AppCompat_Light_ActionBar_TabBar=0x7f090078;
+        public static int Base_Widget_AppCompat_Light_ActionBar_TabText=0x7f090058;
+        public static int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f090059;
+        public static int Base_Widget_AppCompat_Light_ActionBar_TabView=0x7f09005a;
+        public static int Base_Widget_AppCompat_Light_ActivityChooserView=0x7f090079;
+        public static int Base_Widget_AppCompat_Light_AutoCompleteTextView=0x7f09005b;
+        public static int Base_Widget_AppCompat_Light_PopupMenu=0x7f09005c;
+        public static int Base_Widget_AppCompat_Light_PopupMenu_Overflow=0x7f09005d;
+        public static int Base_Widget_AppCompat_ListPopupWindow=0x7f09005e;
+        public static int Base_Widget_AppCompat_ListView_DropDown=0x7f09005f;
+        public static int Base_Widget_AppCompat_ListView_Menu=0x7f090060;
+        public static int Base_Widget_AppCompat_PopupMenu=0x7f090061;
+        public static int Base_Widget_AppCompat_PopupMenu_Overflow=0x7f090062;
+        public static int Base_Widget_AppCompat_PopupWindow=0x7f09007a;
+        public static int Base_Widget_AppCompat_ProgressBar=0x7f090010;
+        public static int Base_Widget_AppCompat_ProgressBar_Horizontal=0x7f090011;
+        public static int Base_Widget_AppCompat_SearchView=0x7f09007b;
+        public static int Base_Widget_AppCompat_Spinner=0x7f090012;
+        public static int Base_Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f090063;
+        public static int Base_Widget_AppCompat_Toolbar=0x7f09007c;
+        public static int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f090064;
+        public static int Platform_AppCompat=0x7f090013;
+        public static int Platform_AppCompat_Dialog=0x7f090014;
+        public static int Platform_AppCompat_Light=0x7f090015;
+        public static int Platform_AppCompat_Light_Dialog=0x7f090016;
+        public static int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem=0x7f09001b;
+        public static int RtlOverlay_Widget_AppCompat_ActionButton_CloseMode=0x7f09001c;
+        public static int RtlOverlay_Widget_AppCompat_ActionButton_Overflow=0x7f09001d;
+        public static int RtlOverlay_Widget_AppCompat_PopupMenuItem=0x7f09001e;
+        public static int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup=0x7f09001f;
+        public static int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text=0x7f090020;
+        public static int RtlOverlay_Widget_AppCompat_Search_DropDown=0x7f090021;
+        public static int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1=0x7f090022;
+        public static int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2=0x7f090023;
+        public static int RtlOverlay_Widget_AppCompat_Search_DropDown_Query=0x7f090024;
+        public static int RtlOverlay_Widget_AppCompat_Search_DropDown_Text=0x7f090025;
+        public static int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f090026;
+        public static int TextAppearance_AppCompat=0x7f09007d;
+        public static int TextAppearance_AppCompat_Body1=0x7f09007e;
+        public static int TextAppearance_AppCompat_Body2=0x7f09007f;
+        public static int TextAppearance_AppCompat_Button=0x7f090080;
+        public static int TextAppearance_AppCompat_Caption=0x7f090081;
+        public static int TextAppearance_AppCompat_Display1=0x7f090082;
+        public static int TextAppearance_AppCompat_Display2=0x7f090083;
+        public static int TextAppearance_AppCompat_Display3=0x7f090084;
+        public static int TextAppearance_AppCompat_Display4=0x7f090085;
+        public static int TextAppearance_AppCompat_Headline=0x7f090086;
+        public static int TextAppearance_AppCompat_Inverse=0x7f090087;
+        public static int TextAppearance_AppCompat_Large=0x7f090088;
+        public static int TextAppearance_AppCompat_Large_Inverse=0x7f090089;
+        public static int TextAppearance_AppCompat_Light_SearchResult_Subtitle=0x7f09008a;
+        public static int TextAppearance_AppCompat_Light_SearchResult_Title=0x7f09008b;
+        public static int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f09008c;
+        public static int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f09008d;
+        public static int TextAppearance_AppCompat_Medium=0x7f09008e;
+        public static int TextAppearance_AppCompat_Medium_Inverse=0x7f09008f;
+        public static int TextAppearance_AppCompat_Menu=0x7f090090;
+        public static int TextAppearance_AppCompat_SearchResult_Subtitle=0x7f090091;
+        public static int TextAppearance_AppCompat_SearchResult_Title=0x7f090092;
+        public static int TextAppearance_AppCompat_Small=0x7f090093;
+        public static int TextAppearance_AppCompat_Small_Inverse=0x7f090094;
+        public static int TextAppearance_AppCompat_Subhead=0x7f090095;
+        public static int TextAppearance_AppCompat_Subhead_Inverse=0x7f090096;
+        public static int TextAppearance_AppCompat_Title=0x7f090097;
+        public static int TextAppearance_AppCompat_Title_Inverse=0x7f090098;
+        public static int TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f090099;
+        public static int TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f09009a;
+        public static int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f09009b;
+        public static int TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f09009c;
+        public static int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f09009d;
+        public static int TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f09009e;
+        public static int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse=0x7f09009f;
+        public static int TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0900a0;
+        public static int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse=0x7f0900a1;
+        public static int TextAppearance_AppCompat_Widget_DropDownItem=0x7f0900a2;
+        public static int TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0900a3;
+        public static int TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0900a4;
+        public static int TextAppearance_AppCompat_Widget_Switch=0x7f0900a5;
+        public static int TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0900a6;
+        public static int TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0900a7;
+        public static int TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0900a8;
+        public static int Theme_AppCompat=0x7f0900a9;
+        public static int Theme_AppCompat_CompactMenu=0x7f0900aa;
+        public static int Theme_AppCompat_Dialog=0x7f0900ab;
+        public static int Theme_AppCompat_DialogWhenLarge=0x7f0900ac;
+        public static int Theme_AppCompat_Light=0x7f0900ad;
+        public static int Theme_AppCompat_Light_DarkActionBar=0x7f0900ae;
+        public static int Theme_AppCompat_Light_Dialog=0x7f0900af;
+        public static int Theme_AppCompat_Light_DialogWhenLarge=0x7f0900b0;
+        public static int Theme_AppCompat_Light_NoActionBar=0x7f0900b1;
+        public static int Theme_AppCompat_NoActionBar=0x7f0900b2;
+        public static int ThemeOverlay_AppCompat=0x7f0900b3;
+        public static int ThemeOverlay_AppCompat_ActionBar=0x7f0900b4;
+        public static int ThemeOverlay_AppCompat_Dark=0x7f0900b5;
+        public static int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0900b6;
+        public static int ThemeOverlay_AppCompat_Light=0x7f0900b7;
+        public static int Widget_AppCompat_ActionBar=0x7f0900b8;
+        public static int Widget_AppCompat_ActionBar_Solid=0x7f0900b9;
+        public static int Widget_AppCompat_ActionBar_TabBar=0x7f0900ba;
+        public static int Widget_AppCompat_ActionBar_TabText=0x7f0900bb;
+        public static int Widget_AppCompat_ActionBar_TabView=0x7f0900bc;
+        public static int Widget_AppCompat_ActionButton=0x7f0900bd;
+        public static int Widget_AppCompat_ActionButton_CloseMode=0x7f0900be;
+        public static int Widget_AppCompat_ActionButton_Overflow=0x7f0900bf;
+        public static int Widget_AppCompat_ActionMode=0x7f0900c0;
+        public static int Widget_AppCompat_ActivityChooserView=0x7f0900c1;
+        public static int Widget_AppCompat_AutoCompleteTextView=0x7f0900c2;
+        public static int Widget_AppCompat_CompoundButton_Switch=0x7f0900c3;
+        public static int Widget_AppCompat_DrawerArrowToggle=0x7f0900c4;
+        public static int Widget_AppCompat_DropDownItem_Spinner=0x7f0900c5;
+        public static int Widget_AppCompat_EditText=0x7f0900c6;
+        public static int Widget_AppCompat_Light_ActionBar=0x7f0900c7;
+        public static int Widget_AppCompat_Light_ActionBar_Solid=0x7f0900c8;
+        public static int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f0900c9;
+        public static int Widget_AppCompat_Light_ActionBar_TabBar=0x7f0900ca;
+        public static int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f0900cb;
+        public static int Widget_AppCompat_Light_ActionBar_TabText=0x7f0900cc;
+        public static int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0900cd;
+        public static int Widget_AppCompat_Light_ActionBar_TabView=0x7f0900ce;
+        public static int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f0900cf;
+        public static int Widget_AppCompat_Light_ActionButton=0x7f0900d0;
+        public static int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f0900d1;
+        public static int Widget_AppCompat_Light_ActionButton_Overflow=0x7f0900d2;
+        public static int Widget_AppCompat_Light_ActionMode_Inverse=0x7f0900d3;
+        public static int Widget_AppCompat_Light_ActivityChooserView=0x7f0900d4;
+        public static int Widget_AppCompat_Light_AutoCompleteTextView=0x7f0900d5;
+        public static int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f0900d6;
+        public static int Widget_AppCompat_Light_ListPopupWindow=0x7f0900d7;
+        public static int Widget_AppCompat_Light_ListView_DropDown=0x7f0900d8;
+        public static int Widget_AppCompat_Light_PopupMenu=0x7f0900d9;
+        public static int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0900da;
+        public static int Widget_AppCompat_Light_SearchView=0x7f0900db;
+        public static int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f0900dc;
+        public static int Widget_AppCompat_ListPopupWindow=0x7f0900dd;
+        public static int Widget_AppCompat_ListView_DropDown=0x7f0900de;
+        public static int Widget_AppCompat_ListView_Menu=0x7f0900df;
+        public static int Widget_AppCompat_PopupMenu=0x7f0900e0;
+        public static int Widget_AppCompat_PopupMenu_Overflow=0x7f0900e1;
+        public static int Widget_AppCompat_PopupWindow=0x7f0900e2;
+        public static int Widget_AppCompat_ProgressBar=0x7f0900e3;
+        public static int Widget_AppCompat_ProgressBar_Horizontal=0x7f0900e4;
+        public static int Widget_AppCompat_SearchView=0x7f0900e5;
+        public static int Widget_AppCompat_Spinner=0x7f0900e6;
+        public static int Widget_AppCompat_Spinner_DropDown=0x7f0900e7;
+        public static int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0900e8;
+        public static int Widget_AppCompat_Toolbar=0x7f0900e9;
+        public static int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0900ea;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionBar.
@@ -1728,7 +1728,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:background
         */
-        public static final int ActionBar_background = 10;
+        public static int ActionBar_background = 10;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionBar} array.
@@ -1740,7 +1740,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           @attr name uk.co.senab.photoview:backgroundSplit
         */
-        public static final int ActionBar_backgroundSplit = 12;
+        public static int ActionBar_backgroundSplit = 12;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#backgroundStacked}
           attribute's value can be found in the {@link #ActionBar} array.
@@ -1752,7 +1752,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           @attr name uk.co.senab.photoview:backgroundStacked
         */
-        public static final int ActionBar_backgroundStacked = 11;
+        public static int ActionBar_backgroundStacked = 11;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #ActionBar} array.
@@ -1768,7 +1768,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:contentInsetEnd
         */
-        public static final int ActionBar_contentInsetEnd = 21;
+        public static int ActionBar_contentInsetEnd = 21;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #ActionBar} array.
@@ -1784,7 +1784,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:contentInsetLeft
         */
-        public static final int ActionBar_contentInsetLeft = 22;
+        public static int ActionBar_contentInsetLeft = 22;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #ActionBar} array.
@@ -1800,7 +1800,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:contentInsetRight
         */
-        public static final int ActionBar_contentInsetRight = 23;
+        public static int ActionBar_contentInsetRight = 23;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #ActionBar} array.
@@ -1816,7 +1816,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:contentInsetStart
         */
-        public static final int ActionBar_contentInsetStart = 20;
+        public static int ActionBar_contentInsetStart = 20;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#customNavigationLayout}
           attribute's value can be found in the {@link #ActionBar} array.
@@ -1826,7 +1826,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:customNavigationLayout
         */
-        public static final int ActionBar_customNavigationLayout = 13;
+        public static int ActionBar_customNavigationLayout = 13;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#displayOptions}
           attribute's value can be found in the {@link #ActionBar} array.
@@ -1848,7 +1848,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 </table>
           @attr name uk.co.senab.photoview:displayOptions
         */
-        public static final int ActionBar_displayOptions = 3;
+        public static int ActionBar_displayOptions = 3;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#divider}
           attribute's value can be found in the {@link #ActionBar} array.
@@ -1858,7 +1858,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:divider
         */
-        public static final int ActionBar_divider = 9;
+        public static int ActionBar_divider = 9;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#elevation}
           attribute's value can be found in the {@link #ActionBar} array.
@@ -1874,7 +1874,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:elevation
         */
-        public static final int ActionBar_elevation = 24;
+        public static int ActionBar_elevation = 24;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#height}
           attribute's value can be found in the {@link #ActionBar} array.
@@ -1890,7 +1890,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:height
         */
-        public static final int ActionBar_height = 0;
+        public static int ActionBar_height = 0;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#hideOnContentScroll}
           attribute's value can be found in the {@link #ActionBar} array.
@@ -1904,7 +1904,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:hideOnContentScroll
         */
-        public static final int ActionBar_hideOnContentScroll = 19;
+        public static int ActionBar_hideOnContentScroll = 19;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #ActionBar} array.
@@ -1914,7 +1914,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:homeAsUpIndicator
         */
-        public static final int ActionBar_homeAsUpIndicator = 26;
+        public static int ActionBar_homeAsUpIndicator = 26;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#homeLayout}
           attribute's value can be found in the {@link #ActionBar} array.
@@ -1924,7 +1924,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:homeLayout
         */
-        public static final int ActionBar_homeLayout = 14;
+        public static int ActionBar_homeLayout = 14;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#icon}
           attribute's value can be found in the {@link #ActionBar} array.
@@ -1934,7 +1934,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:icon
         */
-        public static final int ActionBar_icon = 7;
+        public static int ActionBar_icon = 7;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#indeterminateProgressStyle}
           attribute's value can be found in the {@link #ActionBar} array.
@@ -1944,7 +1944,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:indeterminateProgressStyle
         */
-        public static final int ActionBar_indeterminateProgressStyle = 16;
+        public static int ActionBar_indeterminateProgressStyle = 16;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#itemPadding}
           attribute's value can be found in the {@link #ActionBar} array.
@@ -1960,7 +1960,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:itemPadding
         */
-        public static final int ActionBar_itemPadding = 18;
+        public static int ActionBar_itemPadding = 18;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#logo}
           attribute's value can be found in the {@link #ActionBar} array.
@@ -1970,7 +1970,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:logo
         */
-        public static final int ActionBar_logo = 8;
+        public static int ActionBar_logo = 8;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#navigationMode}
           attribute's value can be found in the {@link #ActionBar} array.
@@ -1988,7 +1988,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 </table>
           @attr name uk.co.senab.photoview:navigationMode
         */
-        public static final int ActionBar_navigationMode = 2;
+        public static int ActionBar_navigationMode = 2;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#popupTheme}
           attribute's value can be found in the {@link #ActionBar} array.
@@ -1998,7 +1998,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:popupTheme
         */
-        public static final int ActionBar_popupTheme = 25;
+        public static int ActionBar_popupTheme = 25;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#progressBarPadding}
           attribute's value can be found in the {@link #ActionBar} array.
@@ -2014,7 +2014,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:progressBarPadding
         */
-        public static final int ActionBar_progressBarPadding = 17;
+        public static int ActionBar_progressBarPadding = 17;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#progressBarStyle}
           attribute's value can be found in the {@link #ActionBar} array.
@@ -2024,7 +2024,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:progressBarStyle
         */
-        public static final int ActionBar_progressBarStyle = 15;
+        public static int ActionBar_progressBarStyle = 15;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#subtitle}
           attribute's value can be found in the {@link #ActionBar} array.
@@ -2038,7 +2038,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:subtitle
         */
-        public static final int ActionBar_subtitle = 4;
+        public static int ActionBar_subtitle = 4;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
@@ -2048,7 +2048,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:subtitleTextStyle
         */
-        public static final int ActionBar_subtitleTextStyle = 6;
+        public static int ActionBar_subtitleTextStyle = 6;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#title}
           attribute's value can be found in the {@link #ActionBar} array.
@@ -2062,7 +2062,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:title
         */
-        public static final int ActionBar_title = 1;
+        public static int ActionBar_title = 1;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
@@ -2072,7 +2072,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:titleTextStyle
         */
-        public static final int ActionBar_titleTextStyle = 5;
+        public static int ActionBar_titleTextStyle = 5;
         /** Attributes that can be used with a ActionBarLayout.
            <p>Includes the following attributes:</p>
            <table>
@@ -2091,7 +2091,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           attribute's value can be found in the {@link #ActionBarLayout} array.
           @attr name android:layout_gravity
         */
-        public static final int ActionBarLayout_android_layout_gravity = 0;
+        public static int ActionBarLayout_android_layout_gravity = 0;
         /** Attributes that can be used with a ActionMenuItemView.
            <p>Includes the following attributes:</p>
            <table>
@@ -2110,7 +2110,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           attribute's value can be found in the {@link #ActionMenuItemView} array.
           @attr name android:minWidth
         */
-        public static final int ActionMenuItemView_android_minWidth = 0;
+        public static int ActionMenuItemView_android_minWidth = 0;
         /** Attributes that can be used with a ActionMenuView.
          */
         public static final int[] ActionMenuView = {
@@ -2149,7 +2149,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:background
         */
-        public static final int ActionMode_background = 3;
+        public static int ActionMode_background = 3;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionMode} array.
@@ -2161,7 +2161,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           @attr name uk.co.senab.photoview:backgroundSplit
         */
-        public static final int ActionMode_backgroundSplit = 4;
+        public static int ActionMode_backgroundSplit = 4;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#closeItemLayout}
           attribute's value can be found in the {@link #ActionMode} array.
@@ -2171,7 +2171,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:closeItemLayout
         */
-        public static final int ActionMode_closeItemLayout = 5;
+        public static int ActionMode_closeItemLayout = 5;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#height}
           attribute's value can be found in the {@link #ActionMode} array.
@@ -2187,7 +2187,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:height
         */
-        public static final int ActionMode_height = 0;
+        public static int ActionMode_height = 0;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
@@ -2197,7 +2197,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:subtitleTextStyle
         */
-        public static final int ActionMode_subtitleTextStyle = 2;
+        public static int ActionMode_subtitleTextStyle = 2;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
@@ -2207,7 +2207,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:titleTextStyle
         */
-        public static final int ActionMode_titleTextStyle = 1;
+        public static int ActionMode_titleTextStyle = 1;
         /** Attributes that can be used with a ActivityChooserView.
            <p>Includes the following attributes:</p>
            <table>
@@ -2232,7 +2232,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:expandActivityOverflowButtonDrawable
         */
-        public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
+        public static int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#initialActivityCount}
           attribute's value can be found in the {@link #ActivityChooserView} array.
@@ -2246,7 +2246,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:initialActivityCount
         */
-        public static final int ActivityChooserView_initialActivityCount = 0;
+        public static int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a CompatTextView.
            <p>Includes the following attributes:</p>
            <table>
@@ -2270,7 +2270,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
           @attr name uk.co.senab.photoview:textAllCaps
         */
-        public static final int CompatTextView_textAllCaps = 0;
+        public static int CompatTextView_textAllCaps = 0;
         /** Attributes that can be used with a DrawerArrowToggle.
            <p>Includes the following attributes:</p>
            <table>
@@ -2314,7 +2314,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:barSize
         */
-        public static final int DrawerArrowToggle_barSize = 6;
+        public static int DrawerArrowToggle_barSize = 6;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#color}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
@@ -2329,7 +2329,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:color
         */
-        public static final int DrawerArrowToggle_color = 0;
+        public static int DrawerArrowToggle_color = 0;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#drawableSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
@@ -2345,7 +2345,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:drawableSize
         */
-        public static final int DrawerArrowToggle_drawableSize = 2;
+        public static int DrawerArrowToggle_drawableSize = 2;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#gapBetweenBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
@@ -2361,7 +2361,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:gapBetweenBars
         */
-        public static final int DrawerArrowToggle_gapBetweenBars = 3;
+        public static int DrawerArrowToggle_gapBetweenBars = 3;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#middleBarArrowSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
@@ -2377,7 +2377,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:middleBarArrowSize
         */
-        public static final int DrawerArrowToggle_middleBarArrowSize = 5;
+        public static int DrawerArrowToggle_middleBarArrowSize = 5;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#spinBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
@@ -2391,7 +2391,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:spinBars
         */
-        public static final int DrawerArrowToggle_spinBars = 1;
+        public static int DrawerArrowToggle_spinBars = 1;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#thickness}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
@@ -2407,7 +2407,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:thickness
         */
-        public static final int DrawerArrowToggle_thickness = 7;
+        public static int DrawerArrowToggle_thickness = 7;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#topBottomBarArrowSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
@@ -2423,7 +2423,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:topBottomBarArrowSize
         */
-        public static final int DrawerArrowToggle_topBottomBarArrowSize = 4;
+        public static int DrawerArrowToggle_topBottomBarArrowSize = 4;
         /** Attributes that can be used with a LinearLayoutCompat.
            <p>Includes the following attributes:</p>
            <table>
@@ -2460,31 +2460,31 @@ containing a value of this type.
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
           @attr name android:baselineAligned
         */
-        public static final int LinearLayoutCompat_android_baselineAligned = 2;
+        public static int LinearLayoutCompat_android_baselineAligned = 2;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#baselineAlignedChildIndex}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
           @attr name android:baselineAlignedChildIndex
         */
-        public static final int LinearLayoutCompat_android_baselineAlignedChildIndex = 3;
+        public static int LinearLayoutCompat_android_baselineAlignedChildIndex = 3;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#gravity}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
           @attr name android:gravity
         */
-        public static final int LinearLayoutCompat_android_gravity = 0;
+        public static int LinearLayoutCompat_android_gravity = 0;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#orientation}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
           @attr name android:orientation
         */
-        public static final int LinearLayoutCompat_android_orientation = 1;
+        public static int LinearLayoutCompat_android_orientation = 1;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#weightSum}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
           @attr name android:weightSum
         */
-        public static final int LinearLayoutCompat_android_weightSum = 4;
+        public static int LinearLayoutCompat_android_weightSum = 4;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#divider}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
@@ -2494,7 +2494,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:divider
         */
-        public static final int LinearLayoutCompat_divider = 5;
+        public static int LinearLayoutCompat_divider = 5;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#dividerPadding}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
@@ -2510,7 +2510,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:dividerPadding
         */
-        public static final int LinearLayoutCompat_dividerPadding = 8;
+        public static int LinearLayoutCompat_dividerPadding = 8;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#measureWithLargestChild}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
@@ -2524,7 +2524,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:measureWithLargestChild
         */
-        public static final int LinearLayoutCompat_measureWithLargestChild = 6;
+        public static int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#showDividers}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
@@ -2543,7 +2543,7 @@ containing a value of this type.
 </table>
           @attr name uk.co.senab.photoview:showDividers
         */
-        public static final int LinearLayoutCompat_showDividers = 7;
+        public static int LinearLayoutCompat_showDividers = 7;
         /** Attributes that can be used with a LinearLayoutCompat_Layout.
            <p>Includes the following attributes:</p>
            <table>
@@ -2568,25 +2568,25 @@ containing a value of this type.
           attribute's value can be found in the {@link #LinearLayoutCompat_Layout} array.
           @attr name android:layout_gravity
         */
-        public static final int LinearLayoutCompat_Layout_android_layout_gravity = 0;
+        public static int LinearLayoutCompat_Layout_android_layout_gravity = 0;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#layout_height}
           attribute's value can be found in the {@link #LinearLayoutCompat_Layout} array.
           @attr name android:layout_height
         */
-        public static final int LinearLayoutCompat_Layout_android_layout_height = 2;
+        public static int LinearLayoutCompat_Layout_android_layout_height = 2;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#layout_weight}
           attribute's value can be found in the {@link #LinearLayoutCompat_Layout} array.
           @attr name android:layout_weight
         */
-        public static final int LinearLayoutCompat_Layout_android_layout_weight = 3;
+        public static int LinearLayoutCompat_Layout_android_layout_weight = 3;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#layout_width}
           attribute's value can be found in the {@link #LinearLayoutCompat_Layout} array.
           @attr name android:layout_width
         */
-        public static final int LinearLayoutCompat_Layout_android_layout_width = 1;
+        public static int LinearLayoutCompat_Layout_android_layout_width = 1;
         /** Attributes that can be used with a ListPopupWindow.
            <p>Includes the following attributes:</p>
            <table>
@@ -2607,13 +2607,13 @@ containing a value of this type.
           attribute's value can be found in the {@link #ListPopupWindow} array.
           @attr name android:dropDownHorizontalOffset
         */
-        public static final int ListPopupWindow_android_dropDownHorizontalOffset = 0;
+        public static int ListPopupWindow_android_dropDownHorizontalOffset = 0;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#dropDownVerticalOffset}
           attribute's value can be found in the {@link #ListPopupWindow} array.
           @attr name android:dropDownVerticalOffset
         */
-        public static final int ListPopupWindow_android_dropDownVerticalOffset = 1;
+        public static int ListPopupWindow_android_dropDownVerticalOffset = 1;
         /** Attributes that can be used with a MenuGroup.
            <p>Includes the following attributes:</p>
            <table>
@@ -2643,37 +2643,37 @@ containing a value of this type.
           attribute's value can be found in the {@link #MenuGroup} array.
           @attr name android:checkableBehavior
         */
-        public static final int MenuGroup_android_checkableBehavior = 5;
+        public static int MenuGroup_android_checkableBehavior = 5;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#enabled}
           attribute's value can be found in the {@link #MenuGroup} array.
           @attr name android:enabled
         */
-        public static final int MenuGroup_android_enabled = 0;
+        public static int MenuGroup_android_enabled = 0;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#id}
           attribute's value can be found in the {@link #MenuGroup} array.
           @attr name android:id
         */
-        public static final int MenuGroup_android_id = 1;
+        public static int MenuGroup_android_id = 1;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#menuCategory}
           attribute's value can be found in the {@link #MenuGroup} array.
           @attr name android:menuCategory
         */
-        public static final int MenuGroup_android_menuCategory = 3;
+        public static int MenuGroup_android_menuCategory = 3;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#orderInCategory}
           attribute's value can be found in the {@link #MenuGroup} array.
           @attr name android:orderInCategory
         */
-        public static final int MenuGroup_android_orderInCategory = 4;
+        public static int MenuGroup_android_orderInCategory = 4;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#visible}
           attribute's value can be found in the {@link #MenuGroup} array.
           @attr name android:visible
         */
-        public static final int MenuGroup_android_visible = 2;
+        public static int MenuGroup_android_visible = 2;
         /** Attributes that can be used with a MenuItem.
            <p>Includes the following attributes:</p>
            <table>
@@ -2732,7 +2732,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionLayout
         */
-        public static final int MenuItem_actionLayout = 14;
+        public static int MenuItem_actionLayout = 14;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionProviderClass}
           attribute's value can be found in the {@link #MenuItem} array.
@@ -2746,7 +2746,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:actionProviderClass
         */
-        public static final int MenuItem_actionProviderClass = 16;
+        public static int MenuItem_actionProviderClass = 16;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionViewClass}
           attribute's value can be found in the {@link #MenuItem} array.
@@ -2760,85 +2760,85 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:actionViewClass
         */
-        public static final int MenuItem_actionViewClass = 15;
+        public static int MenuItem_actionViewClass = 15;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#alphabeticShortcut}
           attribute's value can be found in the {@link #MenuItem} array.
           @attr name android:alphabeticShortcut
         */
-        public static final int MenuItem_android_alphabeticShortcut = 9;
+        public static int MenuItem_android_alphabeticShortcut = 9;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#checkable}
           attribute's value can be found in the {@link #MenuItem} array.
           @attr name android:checkable
         */
-        public static final int MenuItem_android_checkable = 11;
+        public static int MenuItem_android_checkable = 11;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#checked}
           attribute's value can be found in the {@link #MenuItem} array.
           @attr name android:checked
         */
-        public static final int MenuItem_android_checked = 3;
+        public static int MenuItem_android_checked = 3;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#enabled}
           attribute's value can be found in the {@link #MenuItem} array.
           @attr name android:enabled
         */
-        public static final int MenuItem_android_enabled = 1;
+        public static int MenuItem_android_enabled = 1;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#icon}
           attribute's value can be found in the {@link #MenuItem} array.
           @attr name android:icon
         */
-        public static final int MenuItem_android_icon = 0;
+        public static int MenuItem_android_icon = 0;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#id}
           attribute's value can be found in the {@link #MenuItem} array.
           @attr name android:id
         */
-        public static final int MenuItem_android_id = 2;
+        public static int MenuItem_android_id = 2;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#menuCategory}
           attribute's value can be found in the {@link #MenuItem} array.
           @attr name android:menuCategory
         */
-        public static final int MenuItem_android_menuCategory = 5;
+        public static int MenuItem_android_menuCategory = 5;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#numericShortcut}
           attribute's value can be found in the {@link #MenuItem} array.
           @attr name android:numericShortcut
         */
-        public static final int MenuItem_android_numericShortcut = 10;
+        public static int MenuItem_android_numericShortcut = 10;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#onClick}
           attribute's value can be found in the {@link #MenuItem} array.
           @attr name android:onClick
         */
-        public static final int MenuItem_android_onClick = 12;
+        public static int MenuItem_android_onClick = 12;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#orderInCategory}
           attribute's value can be found in the {@link #MenuItem} array.
           @attr name android:orderInCategory
         */
-        public static final int MenuItem_android_orderInCategory = 6;
+        public static int MenuItem_android_orderInCategory = 6;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#title}
           attribute's value can be found in the {@link #MenuItem} array.
           @attr name android:title
         */
-        public static final int MenuItem_android_title = 7;
+        public static int MenuItem_android_title = 7;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#titleCondensed}
           attribute's value can be found in the {@link #MenuItem} array.
           @attr name android:titleCondensed
         */
-        public static final int MenuItem_android_titleCondensed = 8;
+        public static int MenuItem_android_titleCondensed = 8;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#visible}
           attribute's value can be found in the {@link #MenuItem} array.
           @attr name android:visible
         */
-        public static final int MenuItem_android_visible = 4;
+        public static int MenuItem_android_visible = 4;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#showAsAction}
           attribute's value can be found in the {@link #MenuItem} array.
@@ -2858,7 +2858,7 @@ containing a value of this type.
 </table>
           @attr name uk.co.senab.photoview:showAsAction
         */
-        public static final int MenuItem_showAsAction = 13;
+        public static int MenuItem_showAsAction = 13;
         /** Attributes that can be used with a MenuView.
            <p>Includes the following attributes:</p>
            <table>
@@ -2892,43 +2892,43 @@ containing a value of this type.
           attribute's value can be found in the {@link #MenuView} array.
           @attr name android:headerBackground
         */
-        public static final int MenuView_android_headerBackground = 4;
+        public static int MenuView_android_headerBackground = 4;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#horizontalDivider}
           attribute's value can be found in the {@link #MenuView} array.
           @attr name android:horizontalDivider
         */
-        public static final int MenuView_android_horizontalDivider = 2;
+        public static int MenuView_android_horizontalDivider = 2;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#itemBackground}
           attribute's value can be found in the {@link #MenuView} array.
           @attr name android:itemBackground
         */
-        public static final int MenuView_android_itemBackground = 5;
+        public static int MenuView_android_itemBackground = 5;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#itemIconDisabledAlpha}
           attribute's value can be found in the {@link #MenuView} array.
           @attr name android:itemIconDisabledAlpha
         */
-        public static final int MenuView_android_itemIconDisabledAlpha = 6;
+        public static int MenuView_android_itemIconDisabledAlpha = 6;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#itemTextAppearance}
           attribute's value can be found in the {@link #MenuView} array.
           @attr name android:itemTextAppearance
         */
-        public static final int MenuView_android_itemTextAppearance = 1;
+        public static int MenuView_android_itemTextAppearance = 1;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#verticalDivider}
           attribute's value can be found in the {@link #MenuView} array.
           @attr name android:verticalDivider
         */
-        public static final int MenuView_android_verticalDivider = 3;
+        public static int MenuView_android_verticalDivider = 3;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#windowAnimationStyle}
           attribute's value can be found in the {@link #MenuView} array.
           @attr name android:windowAnimationStyle
         */
-        public static final int MenuView_android_windowAnimationStyle = 0;
+        public static int MenuView_android_windowAnimationStyle = 0;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#preserveIconSpacing}
           attribute's value can be found in the {@link #MenuView} array.
@@ -2942,7 +2942,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:preserveIconSpacing
         */
-        public static final int MenuView_preserveIconSpacing = 7;
+        public static int MenuView_preserveIconSpacing = 7;
         /** Attributes that can be used with a PopupWindow.
            <p>Includes the following attributes:</p>
            <table>
@@ -2963,7 +2963,7 @@ containing a value of this type.
           attribute's value can be found in the {@link #PopupWindow} array.
           @attr name android:popupBackground
         */
-        public static final int PopupWindow_android_popupBackground = 0;
+        public static int PopupWindow_android_popupBackground = 0;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#overlapAnchor}
           attribute's value can be found in the {@link #PopupWindow} array.
@@ -2977,7 +2977,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:overlapAnchor
         */
-        public static final int PopupWindow_overlapAnchor = 1;
+        public static int PopupWindow_overlapAnchor = 1;
         /** Attributes that can be used with a PopupWindowBackgroundState.
            <p>Includes the following attributes:</p>
            <table>
@@ -3004,7 +3004,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:state_above_anchor
         */
-        public static final int PopupWindowBackgroundState_state_above_anchor = 0;
+        public static int PopupWindowBackgroundState_state_above_anchor = 0;
         /** Attributes that can be used with a SearchView.
            <p>Includes the following attributes:</p>
            <table>
@@ -3054,25 +3054,25 @@ containing a value of this type.
           attribute's value can be found in the {@link #SearchView} array.
           @attr name android:focusable
         */
-        public static final int SearchView_android_focusable = 0;
+        public static int SearchView_android_focusable = 0;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#imeOptions}
           attribute's value can be found in the {@link #SearchView} array.
           @attr name android:imeOptions
         */
-        public static final int SearchView_android_imeOptions = 3;
+        public static int SearchView_android_imeOptions = 3;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#inputType}
           attribute's value can be found in the {@link #SearchView} array.
           @attr name android:inputType
         */
-        public static final int SearchView_android_inputType = 2;
+        public static int SearchView_android_inputType = 2;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#maxWidth}
           attribute's value can be found in the {@link #SearchView} array.
           @attr name android:maxWidth
         */
-        public static final int SearchView_android_maxWidth = 1;
+        public static int SearchView_android_maxWidth = 1;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#closeIcon}
           attribute's value can be found in the {@link #SearchView} array.
@@ -3082,7 +3082,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:closeIcon
         */
-        public static final int SearchView_closeIcon = 7;
+        public static int SearchView_closeIcon = 7;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#commitIcon}
           attribute's value can be found in the {@link #SearchView} array.
@@ -3092,7 +3092,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:commitIcon
         */
-        public static final int SearchView_commitIcon = 11;
+        public static int SearchView_commitIcon = 11;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#goIcon}
           attribute's value can be found in the {@link #SearchView} array.
@@ -3102,7 +3102,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:goIcon
         */
-        public static final int SearchView_goIcon = 8;
+        public static int SearchView_goIcon = 8;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#iconifiedByDefault}
           attribute's value can be found in the {@link #SearchView} array.
@@ -3116,7 +3116,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:iconifiedByDefault
         */
-        public static final int SearchView_iconifiedByDefault = 5;
+        public static int SearchView_iconifiedByDefault = 5;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#layout}
           attribute's value can be found in the {@link #SearchView} array.
@@ -3126,7 +3126,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:layout
         */
-        public static final int SearchView_layout = 4;
+        public static int SearchView_layout = 4;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#queryBackground}
           attribute's value can be found in the {@link #SearchView} array.
@@ -3136,7 +3136,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:queryBackground
         */
-        public static final int SearchView_queryBackground = 13;
+        public static int SearchView_queryBackground = 13;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#queryHint}
           attribute's value can be found in the {@link #SearchView} array.
@@ -3150,7 +3150,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:queryHint
         */
-        public static final int SearchView_queryHint = 6;
+        public static int SearchView_queryHint = 6;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#searchIcon}
           attribute's value can be found in the {@link #SearchView} array.
@@ -3160,7 +3160,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:searchIcon
         */
-        public static final int SearchView_searchIcon = 9;
+        public static int SearchView_searchIcon = 9;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#submitBackground}
           attribute's value can be found in the {@link #SearchView} array.
@@ -3170,7 +3170,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:submitBackground
         */
-        public static final int SearchView_submitBackground = 14;
+        public static int SearchView_submitBackground = 14;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#suggestionRowLayout}
           attribute's value can be found in the {@link #SearchView} array.
@@ -3180,7 +3180,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:suggestionRowLayout
         */
-        public static final int SearchView_suggestionRowLayout = 12;
+        public static int SearchView_suggestionRowLayout = 12;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#voiceIcon}
           attribute's value can be found in the {@link #SearchView} array.
@@ -3190,7 +3190,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:voiceIcon
         */
-        public static final int SearchView_voiceIcon = 10;
+        public static int SearchView_voiceIcon = 10;
         /** Attributes that can be used with a Spinner.
            <p>Includes the following attributes:</p>
            <table>
@@ -3231,43 +3231,43 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           attribute's value can be found in the {@link #Spinner} array.
           @attr name android:background
         */
-        public static final int Spinner_android_background = 1;
+        public static int Spinner_android_background = 1;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#dropDownHorizontalOffset}
           attribute's value can be found in the {@link #Spinner} array.
           @attr name android:dropDownHorizontalOffset
         */
-        public static final int Spinner_android_dropDownHorizontalOffset = 5;
+        public static int Spinner_android_dropDownHorizontalOffset = 5;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#dropDownSelector}
           attribute's value can be found in the {@link #Spinner} array.
           @attr name android:dropDownSelector
         */
-        public static final int Spinner_android_dropDownSelector = 2;
+        public static int Spinner_android_dropDownSelector = 2;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#dropDownVerticalOffset}
           attribute's value can be found in the {@link #Spinner} array.
           @attr name android:dropDownVerticalOffset
         */
-        public static final int Spinner_android_dropDownVerticalOffset = 6;
+        public static int Spinner_android_dropDownVerticalOffset = 6;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#dropDownWidth}
           attribute's value can be found in the {@link #Spinner} array.
           @attr name android:dropDownWidth
         */
-        public static final int Spinner_android_dropDownWidth = 4;
+        public static int Spinner_android_dropDownWidth = 4;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#gravity}
           attribute's value can be found in the {@link #Spinner} array.
           @attr name android:gravity
         */
-        public static final int Spinner_android_gravity = 0;
+        public static int Spinner_android_gravity = 0;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#popupBackground}
           attribute's value can be found in the {@link #Spinner} array.
           @attr name android:popupBackground
         */
-        public static final int Spinner_android_popupBackground = 3;
+        public static int Spinner_android_popupBackground = 3;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#disableChildrenWhenDisabled}
           attribute's value can be found in the {@link #Spinner} array.
@@ -3281,7 +3281,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:disableChildrenWhenDisabled
         */
-        public static final int Spinner_disableChildrenWhenDisabled = 10;
+        public static int Spinner_disableChildrenWhenDisabled = 10;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#popupPromptView}
           attribute's value can be found in the {@link #Spinner} array.
@@ -3291,7 +3291,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:popupPromptView
         */
-        public static final int Spinner_popupPromptView = 9;
+        public static int Spinner_popupPromptView = 9;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#prompt}
           attribute's value can be found in the {@link #Spinner} array.
@@ -3301,7 +3301,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:prompt
         */
-        public static final int Spinner_prompt = 7;
+        public static int Spinner_prompt = 7;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#spinnerMode}
           attribute's value can be found in the {@link #Spinner} array.
@@ -3318,7 +3318,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 </table>
           @attr name uk.co.senab.photoview:spinnerMode
         */
-        public static final int Spinner_spinnerMode = 8;
+        public static int Spinner_spinnerMode = 8;
         /** Attributes that can be used with a SwitchCompat.
            <p>Includes the following attributes:</p>
            <table>
@@ -3357,19 +3357,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           attribute's value can be found in the {@link #SwitchCompat} array.
           @attr name android:textOff
         */
-        public static final int SwitchCompat_android_textOff = 1;
+        public static int SwitchCompat_android_textOff = 1;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#textOn}
           attribute's value can be found in the {@link #SwitchCompat} array.
           @attr name android:textOn
         */
-        public static final int SwitchCompat_android_textOn = 0;
+        public static int SwitchCompat_android_textOn = 0;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#thumb}
           attribute's value can be found in the {@link #SwitchCompat} array.
           @attr name android:thumb
         */
-        public static final int SwitchCompat_android_thumb = 2;
+        public static int SwitchCompat_android_thumb = 2;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#showText}
           attribute's value can be found in the {@link #SwitchCompat} array.
@@ -3383,7 +3383,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:showText
         */
-        public static final int SwitchCompat_showText = 9;
+        public static int SwitchCompat_showText = 9;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#splitTrack}
           attribute's value can be found in the {@link #SwitchCompat} array.
@@ -3397,7 +3397,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:splitTrack
         */
-        public static final int SwitchCompat_splitTrack = 8;
+        public static int SwitchCompat_splitTrack = 8;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#switchMinWidth}
           attribute's value can be found in the {@link #SwitchCompat} array.
@@ -3413,7 +3413,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:switchMinWidth
         */
-        public static final int SwitchCompat_switchMinWidth = 6;
+        public static int SwitchCompat_switchMinWidth = 6;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#switchPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
@@ -3429,7 +3429,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:switchPadding
         */
-        public static final int SwitchCompat_switchPadding = 7;
+        public static int SwitchCompat_switchPadding = 7;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#switchTextAppearance}
           attribute's value can be found in the {@link #SwitchCompat} array.
@@ -3439,7 +3439,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:switchTextAppearance
         */
-        public static final int SwitchCompat_switchTextAppearance = 5;
+        public static int SwitchCompat_switchTextAppearance = 5;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#thumbTextPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
@@ -3455,7 +3455,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:thumbTextPadding
         */
-        public static final int SwitchCompat_thumbTextPadding = 4;
+        public static int SwitchCompat_thumbTextPadding = 4;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#track}
           attribute's value can be found in the {@link #SwitchCompat} array.
@@ -3465,7 +3465,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:track
         */
-        public static final int SwitchCompat_track = 3;
+        public static int SwitchCompat_track = 3;
         /** Attributes that can be used with a Theme.
            <p>Includes the following attributes:</p>
            <table>
@@ -3672,7 +3672,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionBarDivider
         */
-        public static final int Theme_actionBarDivider = 19;
+        public static int Theme_actionBarDivider = 19;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionBarItemBackground}
           attribute's value can be found in the {@link #Theme} array.
@@ -3682,7 +3682,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionBarItemBackground
         */
-        public static final int Theme_actionBarItemBackground = 20;
+        public static int Theme_actionBarItemBackground = 20;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionBarPopupTheme}
           attribute's value can be found in the {@link #Theme} array.
@@ -3692,7 +3692,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionBarPopupTheme
         */
-        public static final int Theme_actionBarPopupTheme = 13;
+        public static int Theme_actionBarPopupTheme = 13;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionBarSize}
           attribute's value can be found in the {@link #Theme} array.
@@ -3716,7 +3716,7 @@ containing a value of this type.
 </table>
           @attr name uk.co.senab.photoview:actionBarSize
         */
-        public static final int Theme_actionBarSize = 18;
+        public static int Theme_actionBarSize = 18;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionBarSplitStyle}
           attribute's value can be found in the {@link #Theme} array.
@@ -3726,7 +3726,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionBarSplitStyle
         */
-        public static final int Theme_actionBarSplitStyle = 15;
+        public static int Theme_actionBarSplitStyle = 15;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionBarStyle}
           attribute's value can be found in the {@link #Theme} array.
@@ -3736,7 +3736,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionBarStyle
         */
-        public static final int Theme_actionBarStyle = 14;
+        public static int Theme_actionBarStyle = 14;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #Theme} array.
@@ -3746,7 +3746,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionBarTabBarStyle
         */
-        public static final int Theme_actionBarTabBarStyle = 9;
+        public static int Theme_actionBarTabBarStyle = 9;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionBarTabStyle}
           attribute's value can be found in the {@link #Theme} array.
@@ -3756,7 +3756,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionBarTabStyle
         */
-        public static final int Theme_actionBarTabStyle = 8;
+        public static int Theme_actionBarTabStyle = 8;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #Theme} array.
@@ -3766,7 +3766,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionBarTabTextStyle
         */
-        public static final int Theme_actionBarTabTextStyle = 10;
+        public static int Theme_actionBarTabTextStyle = 10;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionBarTheme}
           attribute's value can be found in the {@link #Theme} array.
@@ -3776,7 +3776,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionBarTheme
         */
-        public static final int Theme_actionBarTheme = 16;
+        public static int Theme_actionBarTheme = 16;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionBarWidgetTheme}
           attribute's value can be found in the {@link #Theme} array.
@@ -3786,7 +3786,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionBarWidgetTheme
         */
-        public static final int Theme_actionBarWidgetTheme = 17;
+        public static int Theme_actionBarWidgetTheme = 17;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
@@ -3796,7 +3796,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionButtonStyle
         */
-        public static final int Theme_actionButtonStyle = 43;
+        public static int Theme_actionButtonStyle = 43;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #Theme} array.
@@ -3806,7 +3806,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionDropDownStyle
         */
-        public static final int Theme_actionDropDownStyle = 38;
+        public static int Theme_actionDropDownStyle = 38;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionMenuTextAppearance}
           attribute's value can be found in the {@link #Theme} array.
@@ -3816,7 +3816,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionMenuTextAppearance
         */
-        public static final int Theme_actionMenuTextAppearance = 21;
+        public static int Theme_actionMenuTextAppearance = 21;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionMenuTextColor}
           attribute's value can be found in the {@link #Theme} array.
@@ -3828,7 +3828,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           @attr name uk.co.senab.photoview:actionMenuTextColor
         */
-        public static final int Theme_actionMenuTextColor = 22;
+        public static int Theme_actionMenuTextColor = 22;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionModeBackground}
           attribute's value can be found in the {@link #Theme} array.
@@ -3838,7 +3838,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionModeBackground
         */
-        public static final int Theme_actionModeBackground = 25;
+        public static int Theme_actionModeBackground = 25;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
@@ -3848,7 +3848,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionModeCloseButtonStyle
         */
-        public static final int Theme_actionModeCloseButtonStyle = 24;
+        public static int Theme_actionModeCloseButtonStyle = 24;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionModeCloseDrawable}
           attribute's value can be found in the {@link #Theme} array.
@@ -3858,7 +3858,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionModeCloseDrawable
         */
-        public static final int Theme_actionModeCloseDrawable = 27;
+        public static int Theme_actionModeCloseDrawable = 27;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionModeCopyDrawable}
           attribute's value can be found in the {@link #Theme} array.
@@ -3868,7 +3868,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionModeCopyDrawable
         */
-        public static final int Theme_actionModeCopyDrawable = 29;
+        public static int Theme_actionModeCopyDrawable = 29;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionModeCutDrawable}
           attribute's value can be found in the {@link #Theme} array.
@@ -3878,7 +3878,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionModeCutDrawable
         */
-        public static final int Theme_actionModeCutDrawable = 28;
+        public static int Theme_actionModeCutDrawable = 28;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionModeFindDrawable}
           attribute's value can be found in the {@link #Theme} array.
@@ -3888,7 +3888,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionModeFindDrawable
         */
-        public static final int Theme_actionModeFindDrawable = 33;
+        public static int Theme_actionModeFindDrawable = 33;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionModePasteDrawable}
           attribute's value can be found in the {@link #Theme} array.
@@ -3898,7 +3898,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionModePasteDrawable
         */
-        public static final int Theme_actionModePasteDrawable = 30;
+        public static int Theme_actionModePasteDrawable = 30;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionModePopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
@@ -3908,7 +3908,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionModePopupWindowStyle
         */
-        public static final int Theme_actionModePopupWindowStyle = 35;
+        public static int Theme_actionModePopupWindowStyle = 35;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionModeSelectAllDrawable}
           attribute's value can be found in the {@link #Theme} array.
@@ -3918,7 +3918,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionModeSelectAllDrawable
         */
-        public static final int Theme_actionModeSelectAllDrawable = 31;
+        public static int Theme_actionModeSelectAllDrawable = 31;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionModeShareDrawable}
           attribute's value can be found in the {@link #Theme} array.
@@ -3928,7 +3928,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionModeShareDrawable
         */
-        public static final int Theme_actionModeShareDrawable = 32;
+        public static int Theme_actionModeShareDrawable = 32;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionModeSplitBackground}
           attribute's value can be found in the {@link #Theme} array.
@@ -3938,7 +3938,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionModeSplitBackground
         */
-        public static final int Theme_actionModeSplitBackground = 26;
+        public static int Theme_actionModeSplitBackground = 26;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #Theme} array.
@@ -3948,7 +3948,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionModeStyle
         */
-        public static final int Theme_actionModeStyle = 23;
+        public static int Theme_actionModeStyle = 23;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionModeWebSearchDrawable}
           attribute's value can be found in the {@link #Theme} array.
@@ -3958,7 +3958,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionModeWebSearchDrawable
         */
-        public static final int Theme_actionModeWebSearchDrawable = 34;
+        public static int Theme_actionModeWebSearchDrawable = 34;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
@@ -3968,7 +3968,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionOverflowButtonStyle
         */
-        public static final int Theme_actionOverflowButtonStyle = 11;
+        public static int Theme_actionOverflowButtonStyle = 11;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#actionOverflowMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
@@ -3978,7 +3978,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:actionOverflowMenuStyle
         */
-        public static final int Theme_actionOverflowMenuStyle = 12;
+        public static int Theme_actionOverflowMenuStyle = 12;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#activityChooserViewStyle}
           attribute's value can be found in the {@link #Theme} array.
@@ -3988,13 +3988,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:activityChooserViewStyle
         */
-        public static final int Theme_activityChooserViewStyle = 50;
+        public static int Theme_activityChooserViewStyle = 50;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#windowIsFloating}
           attribute's value can be found in the {@link #Theme} array.
           @attr name android:windowIsFloating
         */
-        public static final int Theme_android_windowIsFloating = 0;
+        public static int Theme_android_windowIsFloating = 0;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#buttonBarButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
@@ -4004,7 +4004,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:buttonBarButtonStyle
         */
-        public static final int Theme_buttonBarButtonStyle = 45;
+        public static int Theme_buttonBarButtonStyle = 45;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#buttonBarStyle}
           attribute's value can be found in the {@link #Theme} array.
@@ -4014,7 +4014,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:buttonBarStyle
         */
-        public static final int Theme_buttonBarStyle = 44;
+        public static int Theme_buttonBarStyle = 44;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#colorAccent}
           attribute's value can be found in the {@link #Theme} array.
@@ -4029,7 +4029,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:colorAccent
         */
-        public static final int Theme_colorAccent = 77;
+        public static int Theme_colorAccent = 77;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#colorButtonNormal}
           attribute's value can be found in the {@link #Theme} array.
@@ -4044,7 +4044,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:colorButtonNormal
         */
-        public static final int Theme_colorButtonNormal = 81;
+        public static int Theme_colorButtonNormal = 81;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#colorControlActivated}
           attribute's value can be found in the {@link #Theme} array.
@@ -4059,7 +4059,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:colorControlActivated
         */
-        public static final int Theme_colorControlActivated = 79;
+        public static int Theme_colorControlActivated = 79;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#colorControlHighlight}
           attribute's value can be found in the {@link #Theme} array.
@@ -4074,7 +4074,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:colorControlHighlight
         */
-        public static final int Theme_colorControlHighlight = 80;
+        public static int Theme_colorControlHighlight = 80;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#colorControlNormal}
           attribute's value can be found in the {@link #Theme} array.
@@ -4089,7 +4089,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:colorControlNormal
         */
-        public static final int Theme_colorControlNormal = 78;
+        public static int Theme_colorControlNormal = 78;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#colorPrimary}
           attribute's value can be found in the {@link #Theme} array.
@@ -4104,7 +4104,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:colorPrimary
         */
-        public static final int Theme_colorPrimary = 75;
+        public static int Theme_colorPrimary = 75;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#colorPrimaryDark}
           attribute's value can be found in the {@link #Theme} array.
@@ -4119,7 +4119,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:colorPrimaryDark
         */
-        public static final int Theme_colorPrimaryDark = 76;
+        public static int Theme_colorPrimaryDark = 76;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#colorSwitchThumbNormal}
           attribute's value can be found in the {@link #Theme} array.
@@ -4134,7 +4134,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:colorSwitchThumbNormal
         */
-        public static final int Theme_colorSwitchThumbNormal = 82;
+        public static int Theme_colorSwitchThumbNormal = 82;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#dividerHorizontal}
           attribute's value can be found in the {@link #Theme} array.
@@ -4144,7 +4144,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:dividerHorizontal
         */
-        public static final int Theme_dividerHorizontal = 49;
+        public static int Theme_dividerHorizontal = 49;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#dividerVertical}
           attribute's value can be found in the {@link #Theme} array.
@@ -4154,7 +4154,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:dividerVertical
         */
-        public static final int Theme_dividerVertical = 48;
+        public static int Theme_dividerVertical = 48;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#dropDownListViewStyle}
           attribute's value can be found in the {@link #Theme} array.
@@ -4164,7 +4164,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:dropDownListViewStyle
         */
-        public static final int Theme_dropDownListViewStyle = 67;
+        public static int Theme_dropDownListViewStyle = 67;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
@@ -4180,7 +4180,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:dropdownListPreferredItemHeight
         */
-        public static final int Theme_dropdownListPreferredItemHeight = 39;
+        public static int Theme_dropdownListPreferredItemHeight = 39;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#editTextBackground}
           attribute's value can be found in the {@link #Theme} array.
@@ -4190,7 +4190,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:editTextBackground
         */
-        public static final int Theme_editTextBackground = 56;
+        public static int Theme_editTextBackground = 56;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#editTextColor}
           attribute's value can be found in the {@link #Theme} array.
@@ -4202,7 +4202,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           @attr name uk.co.senab.photoview:editTextColor
         */
-        public static final int Theme_editTextColor = 55;
+        public static int Theme_editTextColor = 55;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #Theme} array.
@@ -4212,7 +4212,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:homeAsUpIndicator
         */
-        public static final int Theme_homeAsUpIndicator = 42;
+        public static int Theme_homeAsUpIndicator = 42;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#listChoiceBackgroundIndicator}
           attribute's value can be found in the {@link #Theme} array.
@@ -4222,7 +4222,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:listChoiceBackgroundIndicator
         */
-        public static final int Theme_listChoiceBackgroundIndicator = 74;
+        public static int Theme_listChoiceBackgroundIndicator = 74;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#listPopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
@@ -4232,7 +4232,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:listPopupWindowStyle
         */
-        public static final int Theme_listPopupWindowStyle = 68;
+        public static int Theme_listPopupWindowStyle = 68;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#listPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
@@ -4248,7 +4248,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:listPreferredItemHeight
         */
-        public static final int Theme_listPreferredItemHeight = 62;
+        public static int Theme_listPreferredItemHeight = 62;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#listPreferredItemHeightLarge}
           attribute's value can be found in the {@link #Theme} array.
@@ -4264,7 +4264,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:listPreferredItemHeightLarge
         */
-        public static final int Theme_listPreferredItemHeightLarge = 64;
+        public static int Theme_listPreferredItemHeightLarge = 64;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#listPreferredItemHeightSmall}
           attribute's value can be found in the {@link #Theme} array.
@@ -4280,7 +4280,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:listPreferredItemHeightSmall
         */
-        public static final int Theme_listPreferredItemHeightSmall = 63;
+        public static int Theme_listPreferredItemHeightSmall = 63;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#listPreferredItemPaddingLeft}
           attribute's value can be found in the {@link #Theme} array.
@@ -4296,7 +4296,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:listPreferredItemPaddingLeft
         */
-        public static final int Theme_listPreferredItemPaddingLeft = 65;
+        public static int Theme_listPreferredItemPaddingLeft = 65;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#listPreferredItemPaddingRight}
           attribute's value can be found in the {@link #Theme} array.
@@ -4312,7 +4312,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:listPreferredItemPaddingRight
         */
-        public static final int Theme_listPreferredItemPaddingRight = 66;
+        public static int Theme_listPreferredItemPaddingRight = 66;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#panelBackground}
           attribute's value can be found in the {@link #Theme} array.
@@ -4322,7 +4322,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:panelBackground
         */
-        public static final int Theme_panelBackground = 71;
+        public static int Theme_panelBackground = 71;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#panelMenuListTheme}
           attribute's value can be found in the {@link #Theme} array.
@@ -4332,7 +4332,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:panelMenuListTheme
         */
-        public static final int Theme_panelMenuListTheme = 73;
+        public static int Theme_panelMenuListTheme = 73;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#panelMenuListWidth}
           attribute's value can be found in the {@link #Theme} array.
@@ -4348,7 +4348,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:panelMenuListWidth
         */
-        public static final int Theme_panelMenuListWidth = 72;
+        public static int Theme_panelMenuListWidth = 72;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
@@ -4358,7 +4358,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:popupMenuStyle
         */
-        public static final int Theme_popupMenuStyle = 53;
+        public static int Theme_popupMenuStyle = 53;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#popupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
@@ -4368,7 +4368,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:popupWindowStyle
         */
-        public static final int Theme_popupWindowStyle = 54;
+        public static int Theme_popupWindowStyle = 54;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#searchViewStyle}
           attribute's value can be found in the {@link #Theme} array.
@@ -4378,7 +4378,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:searchViewStyle
         */
-        public static final int Theme_searchViewStyle = 61;
+        public static int Theme_searchViewStyle = 61;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#selectableItemBackground}
           attribute's value can be found in the {@link #Theme} array.
@@ -4388,7 +4388,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:selectableItemBackground
         */
-        public static final int Theme_selectableItemBackground = 46;
+        public static int Theme_selectableItemBackground = 46;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#selectableItemBackgroundBorderless}
           attribute's value can be found in the {@link #Theme} array.
@@ -4398,7 +4398,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:selectableItemBackgroundBorderless
         */
-        public static final int Theme_selectableItemBackgroundBorderless = 47;
+        public static int Theme_selectableItemBackgroundBorderless = 47;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#spinnerDropDownItemStyle}
           attribute's value can be found in the {@link #Theme} array.
@@ -4408,7 +4408,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:spinnerDropDownItemStyle
         */
-        public static final int Theme_spinnerDropDownItemStyle = 41;
+        public static int Theme_spinnerDropDownItemStyle = 41;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#spinnerStyle}
           attribute's value can be found in the {@link #Theme} array.
@@ -4418,7 +4418,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:spinnerStyle
         */
-        public static final int Theme_spinnerStyle = 40;
+        public static int Theme_spinnerStyle = 40;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#switchStyle}
           attribute's value can be found in the {@link #Theme} array.
@@ -4428,7 +4428,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:switchStyle
         */
-        public static final int Theme_switchStyle = 57;
+        public static int Theme_switchStyle = 57;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#textAppearanceLargePopupMenu}
           attribute's value can be found in the {@link #Theme} array.
@@ -4438,7 +4438,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:textAppearanceLargePopupMenu
         */
-        public static final int Theme_textAppearanceLargePopupMenu = 36;
+        public static int Theme_textAppearanceLargePopupMenu = 36;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#textAppearanceListItem}
           attribute's value can be found in the {@link #Theme} array.
@@ -4448,7 +4448,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:textAppearanceListItem
         */
-        public static final int Theme_textAppearanceListItem = 69;
+        public static int Theme_textAppearanceListItem = 69;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#textAppearanceListItemSmall}
           attribute's value can be found in the {@link #Theme} array.
@@ -4458,7 +4458,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:textAppearanceListItemSmall
         */
-        public static final int Theme_textAppearanceListItemSmall = 70;
+        public static int Theme_textAppearanceListItemSmall = 70;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#textAppearanceSearchResultSubtitle}
           attribute's value can be found in the {@link #Theme} array.
@@ -4468,7 +4468,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:textAppearanceSearchResultSubtitle
         */
-        public static final int Theme_textAppearanceSearchResultSubtitle = 59;
+        public static int Theme_textAppearanceSearchResultSubtitle = 59;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#textAppearanceSearchResultTitle}
           attribute's value can be found in the {@link #Theme} array.
@@ -4478,7 +4478,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:textAppearanceSearchResultTitle
         */
-        public static final int Theme_textAppearanceSearchResultTitle = 58;
+        public static int Theme_textAppearanceSearchResultTitle = 58;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#textAppearanceSmallPopupMenu}
           attribute's value can be found in the {@link #Theme} array.
@@ -4488,7 +4488,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:textAppearanceSmallPopupMenu
         */
-        public static final int Theme_textAppearanceSmallPopupMenu = 37;
+        public static int Theme_textAppearanceSmallPopupMenu = 37;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#textColorSearchUrl}
           attribute's value can be found in the {@link #Theme} array.
@@ -4500,7 +4500,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           @attr name uk.co.senab.photoview:textColorSearchUrl
         */
-        public static final int Theme_textColorSearchUrl = 60;
+        public static int Theme_textColorSearchUrl = 60;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#toolbarNavigationButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
@@ -4510,7 +4510,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:toolbarNavigationButtonStyle
         */
-        public static final int Theme_toolbarNavigationButtonStyle = 52;
+        public static int Theme_toolbarNavigationButtonStyle = 52;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#toolbarStyle}
           attribute's value can be found in the {@link #Theme} array.
@@ -4520,7 +4520,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:toolbarStyle
         */
-        public static final int Theme_toolbarStyle = 51;
+        public static int Theme_toolbarStyle = 51;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#windowActionBar}
           attribute's value can be found in the {@link #Theme} array.
@@ -4534,7 +4534,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:windowActionBar
         */
-        public static final int Theme_windowActionBar = 1;
+        public static int Theme_windowActionBar = 1;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #Theme} array.
@@ -4548,7 +4548,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:windowActionBarOverlay
         */
-        public static final int Theme_windowActionBarOverlay = 2;
+        public static int Theme_windowActionBarOverlay = 2;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#windowActionModeOverlay}
           attribute's value can be found in the {@link #Theme} array.
@@ -4562,7 +4562,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:windowActionModeOverlay
         */
-        public static final int Theme_windowActionModeOverlay = 3;
+        public static int Theme_windowActionModeOverlay = 3;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#windowFixedHeightMajor}
           attribute's value can be found in the {@link #Theme} array.
@@ -4581,7 +4581,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:windowFixedHeightMajor
         */
-        public static final int Theme_windowFixedHeightMajor = 7;
+        public static int Theme_windowFixedHeightMajor = 7;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#windowFixedHeightMinor}
           attribute's value can be found in the {@link #Theme} array.
@@ -4600,7 +4600,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:windowFixedHeightMinor
         */
-        public static final int Theme_windowFixedHeightMinor = 5;
+        public static int Theme_windowFixedHeightMinor = 5;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#windowFixedWidthMajor}
           attribute's value can be found in the {@link #Theme} array.
@@ -4619,7 +4619,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:windowFixedWidthMajor
         */
-        public static final int Theme_windowFixedWidthMajor = 4;
+        public static int Theme_windowFixedWidthMajor = 4;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#windowFixedWidthMinor}
           attribute's value can be found in the {@link #Theme} array.
@@ -4638,7 +4638,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:windowFixedWidthMinor
         */
-        public static final int Theme_windowFixedWidthMinor = 6;
+        public static int Theme_windowFixedWidthMinor = 6;
         /** Attributes that can be used with a Toolbar.
            <p>Includes the following attributes:</p>
            <table>
@@ -4704,13 +4704,13 @@ containing a value of this type.
           attribute's value can be found in the {@link #Toolbar} array.
           @attr name android:gravity
         */
-        public static final int Toolbar_android_gravity = 0;
+        public static int Toolbar_android_gravity = 0;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#minHeight}
           attribute's value can be found in the {@link #Toolbar} array.
           @attr name android:minHeight
         */
-        public static final int Toolbar_android_minHeight = 1;
+        public static int Toolbar_android_minHeight = 1;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#collapseContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
@@ -4724,7 +4724,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:collapseContentDescription
         */
-        public static final int Toolbar_collapseContentDescription = 19;
+        public static int Toolbar_collapseContentDescription = 19;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#collapseIcon}
           attribute's value can be found in the {@link #Toolbar} array.
@@ -4734,7 +4734,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:collapseIcon
         */
-        public static final int Toolbar_collapseIcon = 18;
+        public static int Toolbar_collapseIcon = 18;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #Toolbar} array.
@@ -4750,7 +4750,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:contentInsetEnd
         */
-        public static final int Toolbar_contentInsetEnd = 5;
+        public static int Toolbar_contentInsetEnd = 5;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #Toolbar} array.
@@ -4766,7 +4766,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:contentInsetLeft
         */
-        public static final int Toolbar_contentInsetLeft = 6;
+        public static int Toolbar_contentInsetLeft = 6;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #Toolbar} array.
@@ -4782,7 +4782,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:contentInsetRight
         */
-        public static final int Toolbar_contentInsetRight = 7;
+        public static int Toolbar_contentInsetRight = 7;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #Toolbar} array.
@@ -4798,7 +4798,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:contentInsetStart
         */
-        public static final int Toolbar_contentInsetStart = 4;
+        public static int Toolbar_contentInsetStart = 4;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#maxButtonHeight}
           attribute's value can be found in the {@link #Toolbar} array.
@@ -4814,7 +4814,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:maxButtonHeight
         */
-        public static final int Toolbar_maxButtonHeight = 16;
+        public static int Toolbar_maxButtonHeight = 16;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#navigationContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
@@ -4828,7 +4828,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:navigationContentDescription
         */
-        public static final int Toolbar_navigationContentDescription = 21;
+        public static int Toolbar_navigationContentDescription = 21;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#navigationIcon}
           attribute's value can be found in the {@link #Toolbar} array.
@@ -4838,7 +4838,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:navigationIcon
         */
-        public static final int Toolbar_navigationIcon = 20;
+        public static int Toolbar_navigationIcon = 20;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#popupTheme}
           attribute's value can be found in the {@link #Toolbar} array.
@@ -4848,7 +4848,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:popupTheme
         */
-        public static final int Toolbar_popupTheme = 8;
+        public static int Toolbar_popupTheme = 8;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#subtitle}
           attribute's value can be found in the {@link #Toolbar} array.
@@ -4862,7 +4862,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:subtitle
         */
-        public static final int Toolbar_subtitle = 3;
+        public static int Toolbar_subtitle = 3;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#subtitleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
@@ -4872,7 +4872,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:subtitleTextAppearance
         */
-        public static final int Toolbar_subtitleTextAppearance = 10;
+        public static int Toolbar_subtitleTextAppearance = 10;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#theme}
           attribute's value can be found in the {@link #Toolbar} array.
@@ -4882,7 +4882,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:theme
         */
-        public static final int Toolbar_theme = 17;
+        public static int Toolbar_theme = 17;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#title}
           attribute's value can be found in the {@link #Toolbar} array.
@@ -4896,7 +4896,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:title
         */
-        public static final int Toolbar_title = 2;
+        public static int Toolbar_title = 2;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#titleMarginBottom}
           attribute's value can be found in the {@link #Toolbar} array.
@@ -4912,7 +4912,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:titleMarginBottom
         */
-        public static final int Toolbar_titleMarginBottom = 15;
+        public static int Toolbar_titleMarginBottom = 15;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#titleMarginEnd}
           attribute's value can be found in the {@link #Toolbar} array.
@@ -4928,7 +4928,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:titleMarginEnd
         */
-        public static final int Toolbar_titleMarginEnd = 13;
+        public static int Toolbar_titleMarginEnd = 13;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#titleMarginStart}
           attribute's value can be found in the {@link #Toolbar} array.
@@ -4944,7 +4944,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:titleMarginStart
         */
-        public static final int Toolbar_titleMarginStart = 12;
+        public static int Toolbar_titleMarginStart = 12;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#titleMarginTop}
           attribute's value can be found in the {@link #Toolbar} array.
@@ -4960,7 +4960,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:titleMarginTop
         */
-        public static final int Toolbar_titleMarginTop = 14;
+        public static int Toolbar_titleMarginTop = 14;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#titleMargins}
           attribute's value can be found in the {@link #Toolbar} array.
@@ -4976,7 +4976,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:titleMargins
         */
-        public static final int Toolbar_titleMargins = 11;
+        public static int Toolbar_titleMargins = 11;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#titleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
@@ -4986,7 +4986,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name uk.co.senab.photoview:titleTextAppearance
         */
-        public static final int Toolbar_titleTextAppearance = 9;
+        public static int Toolbar_titleTextAppearance = 9;
         /** Attributes that can be used with a View.
            <p>Includes the following attributes:</p>
            <table>
@@ -5009,7 +5009,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           attribute's value can be found in the {@link #View} array.
           @attr name android:focusable
         */
-        public static final int View_android_focusable = 0;
+        public static int View_android_focusable = 0;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#paddingEnd}
           attribute's value can be found in the {@link #View} array.
@@ -5025,7 +5025,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:paddingEnd
         */
-        public static final int View_paddingEnd = 2;
+        public static int View_paddingEnd = 2;
         /**
           <p>This symbol is the offset where the {@link uk.co.senab.photoview.R.attr#paddingStart}
           attribute's value can be found in the {@link #View} array.
@@ -5041,7 +5041,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name uk.co.senab.photoview:paddingStart
         */
-        public static final int View_paddingStart = 1;
+        public static int View_paddingStart = 1;
         /** Attributes that can be used with a ViewStubCompat.
            <p>Includes the following attributes:</p>
            <table>
@@ -5064,18 +5064,18 @@ containing a value of this type.
           attribute's value can be found in the {@link #ViewStubCompat} array.
           @attr name android:id
         */
-        public static final int ViewStubCompat_android_id = 0;
+        public static int ViewStubCompat_android_id = 0;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#inflatedId}
           attribute's value can be found in the {@link #ViewStubCompat} array.
           @attr name android:inflatedId
         */
-        public static final int ViewStubCompat_android_inflatedId = 2;
+        public static int ViewStubCompat_android_inflatedId = 2;
         /**
           <p>This symbol is the offset where the {@link android.R.attr#layout}
           attribute's value can be found in the {@link #ViewStubCompat} array.
           @attr name android:layout
         */
-        public static final int ViewStubCompat_android_layout = 1;
+        public static int ViewStubCompat_android_layout = 1;
     };
 }
